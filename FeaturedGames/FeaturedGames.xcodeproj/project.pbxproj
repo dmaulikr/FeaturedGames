@@ -15,6 +15,9 @@
 		0B786F561F316D67009C0BB7 /* Network.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0B786F551F316D67009C0BB7 /* Network.swift */; };
 		0B786F581F316EB6009C0BB7 /* GamesRankingService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0B786F571F316EB6009C0BB7 /* GamesRankingService.swift */; };
 		0B786F5A1F317048009C0BB7 /* GamesRankingMock.json in Resources */ = {isa = PBXBuildFile; fileRef = 0B786F591F317048009C0BB7 /* GamesRankingMock.json */; };
+		0B786F5E1F317507009C0BB7 /* GamesListCollectionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0B786F5D1F317507009C0BB7 /* GamesListCollectionViewController.swift */; };
+		0B786F601F31752A009C0BB7 /* GamesListViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0B786F5F1F31752A009C0BB7 /* GamesListViewModel.swift */; };
+		0B786F621F317A4C009C0BB7 /* Array+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0B786F611F317A4C009C0BB7 /* Array+Extensions.swift */; };
 		0BC02F201F3158A100791D07 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0BC02F1F1F3158A100791D07 /* AppDelegate.swift */; };
 		0BC02F251F3158A100791D07 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0BC02F231F3158A100791D07 /* Main.storyboard */; };
 		0BC02F281F3158A100791D07 /* FeaturedGames.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 0BC02F261F3158A100791D07 /* FeaturedGames.xcdatamodeld */; };
@@ -43,6 +46,9 @@
 		0B786F551F316D67009C0BB7 /* Network.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Network.swift; path = Networking/Network.swift; sourceTree = "<group>"; };
 		0B786F571F316EB6009C0BB7 /* GamesRankingService.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = GamesRankingService.swift; path = Networking/GamesRankingService.swift; sourceTree = "<group>"; };
 		0B786F591F317048009C0BB7 /* GamesRankingMock.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = GamesRankingMock.json; sourceTree = "<group>"; };
+		0B786F5D1F317507009C0BB7 /* GamesListCollectionViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = GamesListCollectionViewController.swift; path = Controllers/GamesList/GamesListCollectionViewController.swift; sourceTree = "<group>"; };
+		0B786F5F1F31752A009C0BB7 /* GamesListViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = GamesListViewModel.swift; path = Controllers/GamesList/GamesListViewModel.swift; sourceTree = "<group>"; };
+		0B786F611F317A4C009C0BB7 /* Array+Extensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = "Array+Extensions.swift"; path = "Extensions/Array+Extensions.swift"; sourceTree = "<group>"; };
 		0BC02F1C1F3158A100791D07 /* FeaturedGames.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = FeaturedGames.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		0BC02F1F1F3158A100791D07 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		0BC02F241F3158A100791D07 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -89,6 +95,7 @@
 		0B786F421F316613009C0BB7 /* Extensions */ = {
 			isa = PBXGroup;
 			children = (
+				0B786F611F317A4C009C0BB7 /* Array+Extensions.swift */,
 			);
 			name = Extensions;
 			sourceTree = "<group>";
@@ -151,6 +158,8 @@
 		0B786F4A1F31675D009C0BB7 /* GamesList */ = {
 			isa = PBXGroup;
 			children = (
+				0B786F5D1F317507009C0BB7 /* GamesListCollectionViewController.swift */,
+				0B786F5F1F31752A009C0BB7 /* GamesListViewModel.swift */,
 			);
 			name = GamesList;
 			sourceTree = "<group>";
@@ -376,8 +385,11 @@
 				0B786F4C1F316949009C0BB7 /* GamesRanking.swift in Sources */,
 				0B786F521F316B94009C0BB7 /* Game.swift in Sources */,
 				0B786F561F316D67009C0BB7 /* Network.swift in Sources */,
+				0B786F601F31752A009C0BB7 /* GamesListViewModel.swift in Sources */,
 				0BC02F281F3158A100791D07 /* FeaturedGames.xcdatamodeld in Sources */,
+				0B786F5E1F317507009C0BB7 /* GamesListCollectionViewController.swift in Sources */,
 				0B786F581F316EB6009C0BB7 /* GamesRankingService.swift in Sources */,
+				0B786F621F317A4C009C0BB7 /* Array+Extensions.swift in Sources */,
 				0BC02F201F3158A100791D07 /* AppDelegate.swift in Sources */,
 				0B786F541F316CBE009C0BB7 /* GameImages.swift in Sources */,
 				0B786F4E1F316ACB009C0BB7 /* Links.swift in Sources */,

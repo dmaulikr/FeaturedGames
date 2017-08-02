@@ -9,9 +9,14 @@
 import Foundation
 import ObjectMapper
 
+// MARK: Remote Service Protocol
+
 protocol GamesRankingRemoteService {
+    init()
     func fetchRanking(completion: @escaping (_ user: GamesRanking?, _ error: Error?) -> Void)
 }
+
+// MARK: Request
 
 class GamesRankingRequest: GamesRankingRemoteService {
     
@@ -22,6 +27,8 @@ class GamesRankingRequest: GamesRankingRemoteService {
         completion(nil, nil)
     }
 }
+
+// MARK: Mock
 
 class GamesRankingMockRequest: GamesRankingRemoteService {
     
