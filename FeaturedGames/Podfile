@@ -1,0 +1,7 @@
+platform :ios, '9.0'
+use_frameworks!
+
+target 'FeaturedGames' do
+  pod 'ObjectMapper'
+  pod 'Kingfisher'
+end
