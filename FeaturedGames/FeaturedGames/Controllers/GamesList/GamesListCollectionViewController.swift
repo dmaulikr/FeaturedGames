@@ -12,14 +12,27 @@ class GamesListCollectionViewController: UICollectionViewController, GamesListDe
     
     // MARK: Properties
     
-    private lazy var viewModel: GamesListViewModel = GamesListViewModel(delegate: self)
+    lazy var viewModel: GamesListViewModel = GamesListViewModel(delegate: self)
+    private let pullToRefresh = UIRefreshControl()
     
     // MARK: VC Lyfe Cycle
     
     override func viewDidLoad() {
         super.viewDidLoad()
         title = "Top #50 Games"
+        pullToRefresh.attributedTitle = NSAttributedString(string: "Pull to refresh")
+        if #available(iOS 10.0, *) {
+            collectionView?.refreshControl = pullToRefresh
+        }else {
+            collectionView?.addSubview(pullToRefresh)
+        }
         fetchRemoteService()
+        //teste()
+    }
+    
+    func teste() {
+        pullToRefresh.beginRefreshing()
+        view.isUserInteractionEnabled = false
     }
     
     private func fetchRemoteService() {
@@ -36,17 +49,27 @@ class GamesListCollectionViewController: UICollectionViewController, GamesListDe
         return viewModel.numberOfFeaturedGames
     }
     
+    func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, sizeForItemAt indexPath: IndexPath) -> CGSize {
+        return CGSize(width: 163, height: 220)
+    }
+    
     override func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
-        let cell = UICollectionViewCell()
-        cell.backgroundColor = .orange
+        let cell: GameListCollectionViewCell = UICollectionViewCell.createCell(collectionView: collectionView, indexPath: indexPath)
+        cell.fill(dto: viewModel.getFeaturedGameDTO(at: indexPath.item))
         return cell
+    }
+    
+    override func collectionView(_ collectionView: UICollectionView, didEndDisplaying cell: UICollectionViewCell, forItemAt indexPath: IndexPath) {
+        if let cell = cell as? GameListCollectionViewCell {
+            cell.cancelGameImageDownload()
+        }
     }
     
     // MARK: GamesListDelegate
     
     func fetchedRanking(success: Bool) {
         DispatchQueue.main.async {
-            self.collectionView?.reloadData()
+            //self.collectionView?.reloadData()
         }
     }
 }

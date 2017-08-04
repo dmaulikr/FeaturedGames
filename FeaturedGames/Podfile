@@ -4,4 +4,6 @@ use_frameworks!
 target 'FeaturedGames' do
   pod 'ObjectMapper'
   pod 'Kingfisher'
+  pod 'PINRemoteImage'
+  
 end
