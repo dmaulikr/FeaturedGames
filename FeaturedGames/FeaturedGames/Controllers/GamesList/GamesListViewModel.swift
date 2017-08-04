@@ -11,7 +11,7 @@ import Foundation
 // MARK: View Model Protocol
 
 protocol GamesListDelegate: class {
-    func fetchedRanking(success: Bool)
+    func fetchedRanking(success: Bool, foundedLocalData: Bool)
 }
 
 class GamesListViewModel {
@@ -54,13 +54,16 @@ class GamesListViewModel {
     // MARK: Remote Service
     
     func fetchRanking() {
-        rankingService.fetchRanking { ranking, error in
-            guard let ranking = ranking, error == nil else {
-                self.delegate?.fetchedRanking(success: false)
-                return
+        DispatchQueue.global().async {
+            sleep(6)
+            self.rankingService.fetchRanking { ranking, error in
+                guard let ranking = ranking, error == nil else {
+                    self.delegate?.fetchedRanking(success: true, foundedLocalData: true)
+                    return
+                }
+                self.currentRanking = ranking
+                self.delegate?.fetchedRanking(success: true, foundedLocalData: true)
             }
-            self.currentRanking = ranking
-            self.delegate?.fetchedRanking(success: true)
         }
     }
     

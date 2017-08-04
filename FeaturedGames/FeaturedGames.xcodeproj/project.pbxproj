@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		0B68314B1F343FB3002F8CD0 /* LoaderView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0B68314A1F343FB3002F8CD0 /* LoaderView.xib */; };
+		0B68314D1F344187002F8CD0 /* LoaderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0B68314C1F344187002F8CD0 /* LoaderView.swift */; };
 		0B786F4C1F316949009C0BB7 /* GamesRanking.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0B786F4B1F316949009C0BB7 /* GamesRanking.swift */; };
 		0B786F4E1F316ACB009C0BB7 /* Links.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0B786F4D1F316ACB009C0BB7 /* Links.swift */; };
 		0B786F501F316AF5009C0BB7 /* FeaturedGame.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0B786F4F1F316AF5009C0BB7 /* FeaturedGame.swift */; };
@@ -21,6 +23,12 @@
 		0B786F651F33F8DB009C0BB7 /* GameListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0B786F641F33F8DB009C0BB7 /* GameListView.swift */; };
 		0B786F671F340094009C0BB7 /* GameListView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0B786F661F340094009C0BB7 /* GameListView.xib */; };
 		0B786F691F3402CB009C0BB7 /* GameListCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0B786F681F3402CB009C0BB7 /* GameListCollectionViewCell.swift */; };
+		0B8F35EF1F344A61001BD118 /* UIViewController+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0B8F35EE1F344A61001BD118 /* UIViewController+Extensions.swift */; };
+		0B8F35F11F344AF3001BD118 /* DispatchQueue+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0B8F35F01F344AF3001BD118 /* DispatchQueue+Extensions.swift */; };
+		0B8F35F51F344BBB001BD118 /* UICollectionViewCell+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0B8F35F41F344BBB001BD118 /* UICollectionViewCell+Extensions.swift */; };
+		0B8F35F71F344BDB001BD118 /* UIView+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0B8F35F61F344BDB001BD118 /* UIView+Extensions.swift */; };
+		0B8F35F91F344C16001BD118 /* UILabel+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0B8F35F81F344C16001BD118 /* UILabel+Extensions.swift */; };
+		0B8F35FB1F344C83001BD118 /* UIImageView+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0B8F35FA1F344C83001BD118 /* UIImageView+Extensions.swift */; };
 		0BC02F201F3158A100791D07 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0BC02F1F1F3158A100791D07 /* AppDelegate.swift */; };
 		0BC02F251F3158A100791D07 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0BC02F231F3158A100791D07 /* Main.storyboard */; };
 		0BC02F281F3158A100791D07 /* FeaturedGames.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 0BC02F261F3158A100791D07 /* FeaturedGames.xcdatamodeld */; };
@@ -41,6 +49,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		0B68314A1F343FB3002F8CD0 /* LoaderView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = LoaderView.xib; path = Extensions/LoaderView.xib; sourceTree = "<group>"; };
+		0B68314C1F344187002F8CD0 /* LoaderView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = LoaderView.swift; path = Extensions/LoaderView.swift; sourceTree = "<group>"; };
 		0B786F4B1F316949009C0BB7 /* GamesRanking.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = GamesRanking.swift; path = Model/GamesRanking.swift; sourceTree = "<group>"; };
 		0B786F4D1F316ACB009C0BB7 /* Links.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Links.swift; path = Model/Links.swift; sourceTree = "<group>"; };
 		0B786F4F1F316AF5009C0BB7 /* FeaturedGame.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = FeaturedGame.swift; path = Model/FeaturedGame.swift; sourceTree = "<group>"; };
@@ -55,6 +65,12 @@
 		0B786F641F33F8DB009C0BB7 /* GameListView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = GameListView.swift; path = Controllers/GamesList/GameListView.swift; sourceTree = "<group>"; };
 		0B786F661F340094009C0BB7 /* GameListView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = GameListView.xib; path = Controllers/GamesList/GameListView.xib; sourceTree = "<group>"; };
 		0B786F681F3402CB009C0BB7 /* GameListCollectionViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = GameListCollectionViewCell.swift; path = Controllers/GamesList/GameListCollectionViewCell.swift; sourceTree = "<group>"; };
+		0B8F35EE1F344A61001BD118 /* UIViewController+Extensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = "UIViewController+Extensions.swift"; path = "Extensions/UIViewController+Extensions.swift"; sourceTree = "<group>"; };
+		0B8F35F01F344AF3001BD118 /* DispatchQueue+Extensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = "DispatchQueue+Extensions.swift"; path = "Extensions/DispatchQueue+Extensions.swift"; sourceTree = "<group>"; };
+		0B8F35F41F344BBB001BD118 /* UICollectionViewCell+Extensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = "UICollectionViewCell+Extensions.swift"; path = "Extensions/UICollectionViewCell+Extensions.swift"; sourceTree = "<group>"; };
+		0B8F35F61F344BDB001BD118 /* UIView+Extensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = "UIView+Extensions.swift"; path = "Extensions/UIView+Extensions.swift"; sourceTree = "<group>"; };
+		0B8F35F81F344C16001BD118 /* UILabel+Extensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = "UILabel+Extensions.swift"; path = "Extensions/UILabel+Extensions.swift"; sourceTree = "<group>"; };
+		0B8F35FA1F344C83001BD118 /* UIImageView+Extensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = "UIImageView+Extensions.swift"; path = "Extensions/UIImageView+Extensions.swift"; sourceTree = "<group>"; };
 		0BC02F1C1F3158A100791D07 /* FeaturedGames.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = FeaturedGames.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		0BC02F1F1F3158A100791D07 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		0BC02F241F3158A100791D07 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -89,6 +105,15 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		0B6831491F343F9C002F8CD0 /* Loader */ = {
+			isa = PBXGroup;
+			children = (
+				0B68314A1F343FB3002F8CD0 /* LoaderView.xib */,
+				0B68314C1F344187002F8CD0 /* LoaderView.swift */,
+			);
+			name = Loader;
+			sourceTree = "<group>";
+		};
 		0B786F411F316607009C0BB7 /* SupportingFiles */ = {
 			isa = PBXGroup;
 			children = (
@@ -102,6 +127,13 @@
 			isa = PBXGroup;
 			children = (
 				0B786F611F317A4C009C0BB7 /* Array+Extensions.swift */,
+				0B8F35F81F344C16001BD118 /* UILabel+Extensions.swift */,
+				0B8F35FA1F344C83001BD118 /* UIImageView+Extensions.swift */,
+				0B8F35F41F344BBB001BD118 /* UICollectionViewCell+Extensions.swift */,
+				0B8F35F61F344BDB001BD118 /* UIView+Extensions.swift */,
+				0B8F35EE1F344A61001BD118 /* UIViewController+Extensions.swift */,
+				0B8F35F01F344AF3001BD118 /* DispatchQueue+Extensions.swift */,
+				0B6831491F343F9C002F8CD0 /* Loader */,
 			);
 			name = Extensions;
 			sourceTree = "<group>";
@@ -331,6 +363,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				0B786F671F340094009C0BB7 /* GameListView.xib in Resources */,
+				0B68314B1F343FB3002F8CD0 /* LoaderView.xib in Resources */,
 				0BC02F2D1F3158A100791D07 /* LaunchScreen.storyboard in Resources */,
 				0BC02F2A1F3158A100791D07 /* Assets.xcassets in Resources */,
 				0B786F5A1F317048009C0BB7 /* GamesRankingMock.json in Resources */,
@@ -402,15 +435,22 @@
 			files = (
 				0B786F4C1F316949009C0BB7 /* GamesRanking.swift in Sources */,
 				0B786F521F316B94009C0BB7 /* Game.swift in Sources */,
+				0B68314D1F344187002F8CD0 /* LoaderView.swift in Sources */,
 				0B786F561F316D67009C0BB7 /* Network.swift in Sources */,
 				0B786F601F31752A009C0BB7 /* GamesListViewModel.swift in Sources */,
 				0BC02F281F3158A100791D07 /* FeaturedGames.xcdatamodeld in Sources */,
 				0B786F5E1F317507009C0BB7 /* GamesListCollectionViewController.swift in Sources */,
+				0B8F35F11F344AF3001BD118 /* DispatchQueue+Extensions.swift in Sources */,
 				0B786F581F316EB6009C0BB7 /* GamesRankingService.swift in Sources */,
 				0B786F621F317A4C009C0BB7 /* Array+Extensions.swift in Sources */,
+				0B8F35F51F344BBB001BD118 /* UICollectionViewCell+Extensions.swift in Sources */,
 				0BC02F201F3158A100791D07 /* AppDelegate.swift in Sources */,
+				0B8F35F71F344BDB001BD118 /* UIView+Extensions.swift in Sources */,
 				0B786F541F316CBE009C0BB7 /* GameImages.swift in Sources */,
 				0B786F651F33F8DB009C0BB7 /* GameListView.swift in Sources */,
+				0B8F35FB1F344C83001BD118 /* UIImageView+Extensions.swift in Sources */,
+				0B8F35EF1F344A61001BD118 /* UIViewController+Extensions.swift in Sources */,
+				0B8F35F91F344C16001BD118 /* UILabel+Extensions.swift in Sources */,
 				0B786F4E1F316ACB009C0BB7 /* Links.swift in Sources */,
 				0B786F691F3402CB009C0BB7 /* GameListCollectionViewCell.swift in Sources */,
 				0B786F501F316AF5009C0BB7 /* FeaturedGame.swift in Sources */,
@@ -557,6 +597,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = 3MHAVKD8BS;
 				INFOPLIST_FILE = FeaturedGames/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = br.com.cauealves.FeaturedGames;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -571,6 +612,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = 3MHAVKD8BS;
 				INFOPLIST_FILE = FeaturedGames/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = br.com.cauealves.FeaturedGames;
 				PRODUCT_NAME = "$(TARGET_NAME)";

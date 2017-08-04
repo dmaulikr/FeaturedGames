@@ -4,7 +4,6 @@
         <adaptation id="fullscreen"/>
     </device>
     <dependencies>
-        <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="12089"/>
         <capability name="Aspect ratio constraints" minToolsVersion="5.1"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
@@ -13,54 +12,52 @@
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
         <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
         <view contentMode="scaleToFill" id="e8r-5s-d0S" customClass="GameListView" customModule="FeaturedGames" customModuleProvider="target">
-            <rect key="frame" x="0.0" y="0.0" width="187" height="220"/>
+            <rect key="frame" x="0.0" y="0.0" width="180" height="282"/>
             <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
             <subviews>
                 <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="7Sn-9w-a9I">
-                    <rect key="frame" x="10" y="10" width="167" height="157"/>
+                    <rect key="frame" x="10" y="10" width="160" height="220"/>
                     <constraints>
-                        <constraint firstAttribute="width" secondItem="7Sn-9w-a9I" secondAttribute="height" multiplier="1:1" constant="10" id="CSM-vs-zX5"/>
+                        <constraint firstAttribute="width" secondItem="7Sn-9w-a9I" secondAttribute="height" multiplier="8:11" id="67q-sc-QZp"/>
+                        <constraint firstAttribute="width" constant="160" id="hid-JI-41B"/>
+                        <constraint firstAttribute="height" constant="220" id="inA-2l-tpi"/>
                     </constraints>
                 </imageView>
-                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="PLAYERUNKNOWN'S BATTLEGROUNDS" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="l5G-H1-STY">
-                    <rect key="frame" x="10" y="172" width="167" height="43.5"/>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="omc-tV-E7A">
+                    <rect key="frame" x="0.0" y="193" width="40" height="40"/>
+                    <subviews>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="1" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Z4G-of-vdv">
+                            <rect key="frame" x="7" y="12" width="27.5" height="17"/>
+                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <fontDescription key="fontDescription" type="boldSystem" pointSize="14"/>
+                            <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                    </subviews>
+                    <color key="backgroundColor" red="0.066666666669999999" green="0.54901960780000003" blue="0.86274509799999999" alpha="1" colorSpace="calibratedRGB"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="40" id="hG2-hB-0Wf"/>
+                        <constraint firstAttribute="width" constant="40" id="kWs-Ha-pM9"/>
+                    </constraints>
+                </view>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="GAME NAME" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="l5G-H1-STY">
+                    <rect key="frame" x="0.0" y="233" width="180" height="49"/>
                     <fontDescription key="fontDescription" type="system" pointSize="14"/>
                     <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                     <nil key="highlightedColor"/>
                 </label>
-                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="omc-tV-E7A">
-                    <rect key="frame" x="0.0" y="130" width="40" height="40"/>
-                    <subviews>
-                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="#20" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Z4G-of-vdv">
-                            <rect key="frame" x="7" y="12" width="27.5" height="17"/>
-                            <fontDescription key="fontDescription" type="boldSystem" pointSize="14"/>
-                            <nil key="textColor"/>
-                            <nil key="highlightedColor"/>
-                        </label>
-                    </subviews>
-                    <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
-                    <constraints>
-                        <constraint firstItem="Z4G-of-vdv" firstAttribute="centerY" secondItem="omc-tV-E7A" secondAttribute="centerY" id="JSA-tz-lEL"/>
-                        <constraint firstAttribute="width" secondItem="omc-tV-E7A" secondAttribute="height" multiplier="1:1" id="MXk-Mg-V9o"/>
-                        <constraint firstAttribute="width" constant="40" id="VR4-DL-t6u"/>
-                        <constraint firstItem="Z4G-of-vdv" firstAttribute="centerX" secondItem="omc-tV-E7A" secondAttribute="centerX" id="aBe-hn-pYX"/>
-                        <constraint firstAttribute="height" constant="40" id="nVL-eA-cdw"/>
-                    </constraints>
-                </view>
             </subviews>
             <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
             <constraints>
-                <constraint firstItem="omc-tV-E7A" firstAttribute="leading" secondItem="e8r-5s-d0S" secondAttribute="leading" id="6Tr-mD-ICx"/>
-                <constraint firstItem="l5G-H1-STY" firstAttribute="top" secondItem="7Sn-9w-a9I" secondAttribute="bottom" constant="5" id="80P-Bb-ubY"/>
-                <constraint firstItem="omc-tV-E7A" firstAttribute="baseline" secondItem="7Sn-9w-a9I" secondAttribute="baseline" constant="3" id="Cgi-ym-rvX"/>
-                <constraint firstItem="7Sn-9w-a9I" firstAttribute="width" secondItem="7Sn-9w-a9I" secondAttribute="height" multiplier="1:1" constant="10" id="SlR-5f-XmM"/>
-                <constraint firstItem="7Sn-9w-a9I" firstAttribute="top" secondItem="e8r-5s-d0S" secondAttribute="top" constant="10" id="SvO-Ca-gu1"/>
-                <constraint firstItem="7Sn-9w-a9I" firstAttribute="leading" secondItem="e8r-5s-d0S" secondAttribute="leading" constant="10" id="ViV-ad-3Oi"/>
-                <constraint firstAttribute="bottom" secondItem="l5G-H1-STY" secondAttribute="bottom" constant="5" id="cRT-BX-mXP"/>
-                <constraint firstAttribute="trailing" secondItem="7Sn-9w-a9I" secondAttribute="trailing" constant="10" id="iRh-RE-QHh"/>
-                <constraint firstItem="l5G-H1-STY" firstAttribute="trailing" secondItem="7Sn-9w-a9I" secondAttribute="trailing" id="kdW-pk-Hg6"/>
-                <constraint firstItem="l5G-H1-STY" firstAttribute="leading" secondItem="7Sn-9w-a9I" secondAttribute="leading" id="tLw-tg-SBQ"/>
-                <constraint firstItem="l5G-H1-STY" firstAttribute="top" secondItem="7Sn-9w-a9I" secondAttribute="bottom" constant="5" id="wrL-OB-rQR"/>
+                <constraint firstAttribute="trailing" secondItem="7Sn-9w-a9I" secondAttribute="trailing" constant="10" id="05U-J2-1PO"/>
+                <constraint firstItem="l5G-H1-STY" firstAttribute="leading" secondItem="e8r-5s-d0S" secondAttribute="leading" id="1ED-wG-hld"/>
+                <constraint firstItem="omc-tV-E7A" firstAttribute="leading" secondItem="e8r-5s-d0S" secondAttribute="leading" id="9MK-i7-gMV"/>
+                <constraint firstAttribute="trailing" secondItem="l5G-H1-STY" secondAttribute="trailing" id="AZQ-r2-HZR"/>
+                <constraint firstItem="7Sn-9w-a9I" firstAttribute="top" secondItem="e8r-5s-d0S" secondAttribute="top" constant="10" id="DBh-5a-2cF"/>
+                <constraint firstAttribute="bottom" secondItem="l5G-H1-STY" secondAttribute="bottom" id="Lw5-JK-NA8"/>
+                <constraint firstItem="omc-tV-E7A" firstAttribute="baseline" secondItem="7Sn-9w-a9I" secondAttribute="baseline" constant="3" id="Rzz-ud-cU8"/>
+                <constraint firstItem="7Sn-9w-a9I" firstAttribute="leading" secondItem="e8r-5s-d0S" secondAttribute="leading" constant="10" id="i6x-cx-JXx"/>
+                <constraint firstItem="l5G-H1-STY" firstAttribute="top" secondItem="omc-tV-E7A" secondAttribute="bottom" id="yT7-sm-eI7"/>
             </constraints>
             <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
             <connections>

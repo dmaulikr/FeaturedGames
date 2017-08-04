@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="12121" systemVersion="16G29" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="12089"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB" customClass="LoaderView" customModule="FeaturedGames" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <view alpha="0.29999999999999999" contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="uFs-hr-TBX">
+                    <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                    <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                </view>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="sNN-wv-mGR">
+                    <rect key="frame" x="88" y="283" width="199" height="100"/>
+                    <subviews>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="carregando jogos..." textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="YQZ-lm-zUo">
+                            <rect key="frame" x="2" y="60.5" width="195" height="20.5"/>
+                            <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                            <nil key="textColor"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                    </subviews>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    <constraints>
+                        <constraint firstAttribute="bottom" secondItem="YQZ-lm-zUo" secondAttribute="bottom" constant="19" id="3qu-5H-yIN"/>
+                        <constraint firstAttribute="width" constant="199" id="X1G-SI-bCL"/>
+                        <constraint firstAttribute="height" constant="100" id="cD0-24-yl2"/>
+                        <constraint firstAttribute="trailing" secondItem="YQZ-lm-zUo" secondAttribute="trailing" constant="2" id="jNJ-8J-o0I"/>
+                        <constraint firstItem="YQZ-lm-zUo" firstAttribute="leading" secondItem="sNN-wv-mGR" secondAttribute="leading" constant="2" id="tXm-oq-unN"/>
+                    </constraints>
+                </view>
+                <activityIndicatorView opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" style="gray" translatesAutoresizingMaskIntoConstraints="NO" id="SDi-mp-UUr">
+                    <rect key="frame" x="177" y="303" width="20" height="20"/>
+                </activityIndicatorView>
+            </subviews>
+            <constraints>
+                <constraint firstItem="sNN-wv-mGR" firstAttribute="top" secondItem="SDi-mp-UUr" secondAttribute="bottom" constant="-40" id="IMg-eD-WuQ"/>
+                <constraint firstItem="sNN-wv-mGR" firstAttribute="centerY" secondItem="iN0-l3-epB" secondAttribute="centerY" id="K0I-Iv-RXk"/>
+                <constraint firstItem="sNN-wv-mGR" firstAttribute="centerX" secondItem="iN0-l3-epB" secondAttribute="centerX" id="jiN-Sm-RBr"/>
+                <constraint firstItem="SDi-mp-UUr" firstAttribute="centerX" secondItem="sNN-wv-mGR" secondAttribute="centerX" id="tE4-3T-Dvd"/>
+            </constraints>
+            <connections>
+                <outlet property="alertView" destination="sNN-wv-mGR" id="lA3-KL-zSO"/>
+                <outlet property="backgroundView" destination="uFs-hr-TBX" id="pkq-eC-8Km"/>
+                <outlet property="indicatorView" destination="SDi-mp-UUr" id="iQw-8q-M2x"/>
+                <outlet property="loadingMessageLabel" destination="YQZ-lm-zUo" id="TKp-kf-zm6"/>
+            </connections>
+            <point key="canvasLocation" x="59.5" y="54.5"/>
+        </view>
+    </objects>
+</document>

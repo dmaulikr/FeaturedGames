@@ -9,13 +9,18 @@
 import UIKit
 import CoreData
 
+@available(iOS 10.0, *)
 @UIApplicationMain
 class AppDelegate: UIResponder, UIApplicationDelegate {
 
     var window: UIWindow?
 
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplicationLaunchOptionsKey: Any]?) -> Bool {
-        // Override point for customization after application launch.
+        
+        UINavigationBar.appearance().barTintColor = Colors.primary.color
+        UINavigationBar.appearance().titleTextAttributes = [NSForegroundColorAttributeName: LabelStyle.navigation.attributes.textColor,
+                                                            NSFontAttributeName: LabelStyle.navigation.attributes.font]
+        
         return true
     }
 
