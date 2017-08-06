@@ -29,7 +29,7 @@ extension UIViewController {
     
     func showLoader(with message: String = "carregando jogos...".localized) {
         let loader: LoaderView = UIView.fromNib()
-        loader.frame = CGRect(x: 0, y: 0, width: view.frame.size.width, height: view.frame.size.height)
+        loader.frame = CGRect(x: 0, y: 0, width: UIScreen.main.bounds.width, height: UIScreen.main.bounds.height)
         let window = UIApplication.shared.keyWindow
         window?.addSubview(loader)
         window?.bringSubview(toFront: loader)
@@ -39,6 +39,15 @@ extension UIViewController {
     func stopLoader() {
         let window = UIApplication.shared.keyWindow
         window?.subviews.forEach { if $0.isKind(of: LoaderView.self) { $0.removeFromSuperview() } }
+    }
+    
+    func addSpecialNavigation(with title: String, and id: String = "") {
+        let titleLabel = UILabel()
+        self.title = ""
+        titleLabel.fill(with: title, and: LabelStyle.navigation)
+        titleLabel.sizeToFit()
+        titleLabel.accessibilityIdentifier = "\(id).navigation.title"
+        navigationItem.leftBarButtonItem = UIBarButtonItem(customView: titleLabel)
     }
     
 }

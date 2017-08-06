@@ -30,8 +30,8 @@ class LoaderView: UIView {
     private func setupAppearence() {
         backgroundView.backgroundColor = Colors.black.color.withAlphaComponent(0.9)
         alertView.layer.cornerRadius = alertView.frame.size.height / 5
-        loadingMessageLabel.textColor = Colors.gameName.color
-        indicatorView.color = Colors.gameName.color
+        loadingMessageLabel.textColor = Colors.primary.color
+        indicatorView.color = Colors.primary.color
     }
     
     func startAnimation(with message: String = "") {

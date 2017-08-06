@@ -47,10 +47,9 @@ class GameListViewTest: XCTestCase {
             return
         }
         
-        XCTAssertNotNil(view.imageView.image)
         XCTAssertEqual(view.nameLabel.text, "Grand Theft Auto V")
         XCTAssertNotNil(view.rankingPositionTagView)
         XCTAssertFalse(view.rankingPositionTagView.isHidden)
-        XCTAssertEqual(view.rankingPositionTagLabel.text, "6")
+        XCTAssertEqual(view.rankingPositionTagLabel.text, "#6")
     }
 }

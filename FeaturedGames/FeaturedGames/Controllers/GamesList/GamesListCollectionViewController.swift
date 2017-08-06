@@ -23,8 +23,7 @@ class GamesListCollectionViewController: UICollectionViewController, UICollectio
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        title = "Top #50 Games".localized
-        navigationController?.navigationBar.accessibilityIdentifier = "\(screenID).navigationbar.title"
+        addSpecialNavigation(with: "Top #50 Games".localized, and: screenID)
         setupRefreshControl()
     }
     
@@ -35,8 +34,8 @@ class GamesListCollectionViewController: UICollectionViewController, UICollectio
     
     private func setupRefreshControl() {
         refreshControl.attributedTitle = NSAttributedString(string: "",
-                                                            attributes: [NSForegroundColorAttributeName: Colors.gameName.color])
-        refreshControl.tintColor = Colors.gameName.color
+                                                            attributes: [NSForegroundColorAttributeName: Colors.primary.color])
+        refreshControl.tintColor = Colors.primary.color
         if #available(iOS 10.0, *) {
             collectionView?.refreshControl = refreshControl
         }else {
@@ -48,6 +47,7 @@ class GamesListCollectionViewController: UICollectionViewController, UICollectio
     
     func fetchRemoteService() {
         DispatchQueue.main.safeAsync {
+            sleep(1)
             self.view.isUserInteractionEnabled = false
             self.showLoader()
             self.refreshControl.beginRefreshing()

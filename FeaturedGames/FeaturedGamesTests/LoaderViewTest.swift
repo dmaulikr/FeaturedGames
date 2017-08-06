@@ -46,8 +46,8 @@ class LoaderViewTest: XCTestCase {
         
         XCTAssertEqual(view.backgroundView.backgroundColor, UIColor.black.withAlphaComponent(0.9))
         XCTAssertEqual(view.alertView.layer.cornerRadius, 20)
-        XCTAssertEqual(view.loadingMessageLabel.textColor, UIColor(red: 20/255, green: 101/255, blue: 150/255, alpha: 1.0))
-        XCTAssertEqual(view.indicatorView.color, UIColor(red: 20/255, green: 101/255, blue: 150/255, alpha: 1.0))
+        XCTAssertEqual(view.loadingMessageLabel.textColor, UIColor(red: 219/255, green: 81/255, blue: 73/255, alpha: 1.0))
+        XCTAssertEqual(view.indicatorView.color, UIColor(red: 219/255, green: 81/255, blue: 73/255, alpha: 1.0))
     }
     
     func testAnimation() {

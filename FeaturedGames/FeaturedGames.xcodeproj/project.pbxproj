@@ -154,6 +154,7 @@
 		0B786F421F316613009C0BB7 /* Extensions */ = {
 			isa = PBXGroup;
 			children = (
+				0BF368511F36A03E00200623 /* String+Extensions.swift */,
 				0B786F611F317A4C009C0BB7 /* Array+Extensions.swift */,
 				0B8F35F81F344C16001BD118 /* UILabel+Extensions.swift */,
 				0B8F35FA1F344C83001BD118 /* UIImageView+Extensions.swift */,
@@ -162,7 +163,6 @@
 				0B8F35EE1F344A61001BD118 /* UIViewController+Extensions.swift */,
 				0B8F35F01F344AF3001BD118 /* DispatchQueue+Extensions.swift */,
 				0B6831491F343F9C002F8CD0 /* Loader */,
-				0BF368511F36A03E00200623 /* String+Extensions.swift */,
 			);
 			name = Extensions;
 			sourceTree = "<group>";

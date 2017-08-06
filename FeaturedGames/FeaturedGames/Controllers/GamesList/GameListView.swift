@@ -43,7 +43,7 @@ class GameListView: UIView {
         imageView.downloadImage(with: dto.imageURL)
         nameLabel.fill(with: dto.name, and: .gameName)
         rankingPositionTagView.circleFormat()
-        rankingPositionTagView.backgroundColor = Colors.gameRankingPositionTag.color
-        rankingPositionTagLabel.fill(with: "\(dto.rankingPosition)", and: .gameRankingPositionTag)
+        rankingPositionTagView.backgroundColor = Colors.primary.color
+        rankingPositionTagLabel.fill(with: "#\(dto.rankingPosition)", and: .gameRankingPositionTag)
     }
 }

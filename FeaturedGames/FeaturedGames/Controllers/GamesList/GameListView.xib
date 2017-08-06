@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="12121" systemVersion="16G29" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
-    <device id="retina4_7" orientation="portrait">
+    <device id="retina5_5" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
     <dependencies>
@@ -23,12 +23,17 @@
                         <constraint firstAttribute="height" constant="220" id="inA-2l-tpi"/>
                     </constraints>
                 </imageView>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="GAME NAME" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="l5G-H1-STY">
+                    <rect key="frame" x="0.0" y="230" width="180" height="52"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                    <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    <nil key="highlightedColor"/>
+                </label>
                 <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="omc-tV-E7A">
-                    <rect key="frame" x="0.0" y="193" width="40" height="40"/>
+                    <rect key="frame" x="3" y="3" width="40" height="40"/>
                     <subviews>
-                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="1" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Z4G-of-vdv">
-                            <rect key="frame" x="7" y="12" width="27.5" height="17"/>
-                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="#1 0" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Z4G-of-vdv">
+                            <rect key="frame" x="6" y="12" width="29.5" height="17"/>
                             <fontDescription key="fontDescription" type="boldSystem" pointSize="14"/>
                             <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                             <nil key="highlightedColor"/>
@@ -36,28 +41,24 @@
                     </subviews>
                     <color key="backgroundColor" red="0.066666666669999999" green="0.54901960780000003" blue="0.86274509799999999" alpha="1" colorSpace="calibratedRGB"/>
                     <constraints>
-                        <constraint firstAttribute="height" constant="40" id="hG2-hB-0Wf"/>
-                        <constraint firstAttribute="width" constant="40" id="kWs-Ha-pM9"/>
+                        <constraint firstAttribute="height" constant="40" id="5kf-I5-IHd"/>
+                        <constraint firstItem="Z4G-of-vdv" firstAttribute="centerY" secondItem="omc-tV-E7A" secondAttribute="centerY" id="hqt-Mr-o8P"/>
+                        <constraint firstItem="Z4G-of-vdv" firstAttribute="centerX" secondItem="omc-tV-E7A" secondAttribute="centerX" id="mlx-G8-mQt"/>
+                        <constraint firstAttribute="width" constant="40" id="oCv-uq-hcZ"/>
                     </constraints>
                 </view>
-                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="GAME NAME" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="l5G-H1-STY">
-                    <rect key="frame" x="0.0" y="233" width="180" height="49"/>
-                    <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                    <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                    <nil key="highlightedColor"/>
-                </label>
             </subviews>
             <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
             <constraints>
                 <constraint firstAttribute="trailing" secondItem="7Sn-9w-a9I" secondAttribute="trailing" constant="10" id="05U-J2-1PO"/>
                 <constraint firstItem="l5G-H1-STY" firstAttribute="leading" secondItem="e8r-5s-d0S" secondAttribute="leading" id="1ED-wG-hld"/>
-                <constraint firstItem="omc-tV-E7A" firstAttribute="leading" secondItem="e8r-5s-d0S" secondAttribute="leading" id="9MK-i7-gMV"/>
                 <constraint firstAttribute="trailing" secondItem="l5G-H1-STY" secondAttribute="trailing" id="AZQ-r2-HZR"/>
                 <constraint firstItem="7Sn-9w-a9I" firstAttribute="top" secondItem="e8r-5s-d0S" secondAttribute="top" constant="10" id="DBh-5a-2cF"/>
                 <constraint firstAttribute="bottom" secondItem="l5G-H1-STY" secondAttribute="bottom" id="Lw5-JK-NA8"/>
-                <constraint firstItem="omc-tV-E7A" firstAttribute="baseline" secondItem="7Sn-9w-a9I" secondAttribute="baseline" constant="3" id="Rzz-ud-cU8"/>
+                <constraint firstItem="7Sn-9w-a9I" firstAttribute="top" secondItem="omc-tV-E7A" secondAttribute="bottom" constant="-33" id="NcI-Fh-4Rj"/>
+                <constraint firstItem="7Sn-9w-a9I" firstAttribute="leading" secondItem="omc-tV-E7A" secondAttribute="trailing" constant="-33" id="bak-0R-8do"/>
                 <constraint firstItem="7Sn-9w-a9I" firstAttribute="leading" secondItem="e8r-5s-d0S" secondAttribute="leading" constant="10" id="i6x-cx-JXx"/>
-                <constraint firstItem="l5G-H1-STY" firstAttribute="top" secondItem="omc-tV-E7A" secondAttribute="bottom" id="yT7-sm-eI7"/>
+                <constraint firstItem="l5G-H1-STY" firstAttribute="top" secondItem="7Sn-9w-a9I" secondAttribute="bottom" id="xgY-gj-LZG"/>
             </constraints>
             <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
             <connections>
@@ -66,7 +67,7 @@
                 <outlet property="rankingPositionTagLabel" destination="Z4G-of-vdv" id="WNa-q4-5ED"/>
                 <outlet property="rankingPositionTagView" destination="omc-tV-E7A" id="hmx-Jw-Qtf"/>
             </connections>
-            <point key="canvasLocation" x="-352" y="326"/>
+            <point key="canvasLocation" x="-352" y="325"/>
         </view>
     </objects>
 </document>

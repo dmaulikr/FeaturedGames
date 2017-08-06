@@ -4,12 +4,11 @@
         <adaptation id="fullscreen"/>
     </device>
     <dependencies>
-        <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="12089"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
-        <!--Top #50 Games-->
+        <!--Games List Collection View Controller-->
         <scene sceneID="NKt-ra-nRm">
             <objects>
                 <collectionViewController storyboardIdentifier="GamesListCollectionViewController" useStoryboardIdentifierAsRestorationIdentifier="YES" id="DdP-aN-gNT" customClass="GamesListCollectionViewController" customModule="FeaturedGames" customModuleProvider="target" sceneMemberID="viewController">
@@ -31,6 +30,9 @@
                                     <rect key="frame" x="0.0" y="0.0" width="180" height="282"/>
                                     <autoresizingMask key="autoresizingMask"/>
                                 </view>
+                                <connections>
+                                    <segue destination="FSc-qQ-blz" kind="show" id="hYH-xc-hRZ"/>
+                                </connections>
                             </collectionViewCell>
                         </cells>
                         <connections>
@@ -38,16 +40,13 @@
                             <outlet property="delegate" destination="DdP-aN-gNT" id="tcD-u8-77Z"/>
                         </connections>
                     </collectionView>
-                    <navigationItem key="navigationItem" title="Top #50 Games" id="y5J-SO-06M"/>
-                    <connections>
-                        <segue destination="FSc-qQ-blz" kind="show" identifier="gameDetailSegue" id="Mty-U3-XyD"/>
-                    </connections>
+                    <navigationItem key="navigationItem" id="y5J-SO-06M"/>
                 </collectionViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="oKM-7Y-bq1" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="708" y="144.3778110944528"/>
         </scene>
-        <!--Game Detail-->
+        <!--Table View Controller-->
         <scene sceneID="hEc-Pd-h4K">
             <objects>
                 <tableViewController id="FSc-qQ-blz" sceneMemberID="viewController">
@@ -70,7 +69,7 @@
                             <outlet property="delegate" destination="FSc-qQ-blz" id="1vX-76-jlB"/>
                         </connections>
                     </tableView>
-                    <navigationItem key="navigationItem" title="Game Detail" id="mzt-at-gMo"/>
+                    <navigationItem key="navigationItem" id="mzt-at-gMo"/>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="jWa-oG-RKe" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>

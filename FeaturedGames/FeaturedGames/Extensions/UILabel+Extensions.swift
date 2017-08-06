@@ -19,9 +19,9 @@ enum LabelStyle {
     var attributes: labelStyleAttributes {
         switch self {
         case .navigation:
-            return (UIFont.systemFont(ofSize: 20, weight: UIFontWeightSemibold), Colors.white.color)
+            return (UIFont.systemFont(ofSize: 24, weight: UIFontWeightSemibold), Colors.primary.color)
         case .gameName:
-            return (UIFont.systemFont(ofSize: 14, weight: UIFontWeightSemibold), Colors.gameName.color)
+            return (UIFont.systemFont(ofSize: 14, weight: UIFontWeightSemibold), Colors.primary.color)
         case .gameRankingPositionTag:
             return (UIFont.systemFont(ofSize: 14, weight: UIFontWeightBold), Colors.white.color)
         }
@@ -30,19 +30,16 @@ enum LabelStyle {
 
 enum Colors {
     case primary
-    case gameName
-    case gameRankingPositionTag
+    case positionTag
     case white
     case black
     
     var color: UIColor {
         switch self {
         case .primary:
-            return UIColor(red: 31/255, green: 145/255, blue: 203/255, alpha: 1.0)
-        case .gameName:
-            return UIColor(red: 20/255, green: 101/255, blue: 150/255, alpha: 1.0)
-        case .gameRankingPositionTag:
-            return UIColor(red: 48/255, green: 173/255, blue: 234/255, alpha: 1.0)
+            return UIColor(red: 219/255, green: 81/255, blue: 73/255, alpha: 1.0)
+        case .positionTag:
+            return UIColor(red: 254/255, green: 210/255, blue: 0/255, alpha: 1.0)
         case .white:
             return .white
         case .black:

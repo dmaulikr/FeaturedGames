@@ -17,7 +17,8 @@ class ViewControllerExtensionsTest: XCTestCase {
     override func setUp() {
         super.setUp()
         
-        UIApplication.shared.keyWindow!.rootViewController = controller
+        let navigationController = UINavigationController(rootViewController: controller)
+        UIApplication.shared.keyWindow!.rootViewController = navigationController
     }
     
     override func tearDown() {
@@ -37,6 +38,19 @@ class ViewControllerExtensionsTest: XCTestCase {
         XCTAssertEqual(alert.actions.count, 1)
         XCTAssertEqual(alert.actions.first?.title, "testing alert positive action title")
         XCTAssertEqual(alert.actions.first?.style, .default)
+    }
+    
+    func testSpecialNavigation() {
+        let title = "testing navigation title"
+        controller.addSpecialNavigation(with: title, and: String(describing: ViewControllerExtensionsTest.self))
+        guard let customNavigationItem = controller.navigationItem.leftBarButtonItem?.customView as? UILabel else {
+            XCTFail()
+            return
+        }
+        
+        XCTAssertTrue(controller.title!.isEmpty)
+        XCTAssertEqual(customNavigationItem.text, title)
+        XCTAssertEqual(customNavigationItem.accessibilityIdentifier, "ViewControllerExtensionsTest.navigation.title")
     }
     
     func testPresentingLoaderView() {

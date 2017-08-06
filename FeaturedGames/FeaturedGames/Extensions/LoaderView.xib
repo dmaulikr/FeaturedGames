@@ -10,13 +10,12 @@
     <objects>
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
         <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
-        <view contentMode="scaleToFill" id="iN0-l3-epB" customClass="LoaderView" customModule="FeaturedGames" customModuleProvider="target">
+        <view userInteractionEnabled="NO" contentMode="scaleToFill" id="iN0-l3-epB" customClass="LoaderView" customModule="FeaturedGames" customModuleProvider="target">
             <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
             <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
             <subviews>
-                <view alpha="0.29999999999999999" contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="uFs-hr-TBX">
+                <view alpha="0.29999999999999999" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="uFs-hr-TBX">
                     <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
-                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                     <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                 </view>
                 <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="sNN-wv-mGR">
@@ -43,10 +42,14 @@
                 </activityIndicatorView>
             </subviews>
             <constraints>
+                <constraint firstItem="uFs-hr-TBX" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" id="1SX-AL-b9W"/>
                 <constraint firstItem="sNN-wv-mGR" firstAttribute="top" secondItem="SDi-mp-UUr" secondAttribute="bottom" constant="-40" id="IMg-eD-WuQ"/>
                 <constraint firstItem="sNN-wv-mGR" firstAttribute="centerY" secondItem="iN0-l3-epB" secondAttribute="centerY" id="K0I-Iv-RXk"/>
+                <constraint firstAttribute="trailing" secondItem="uFs-hr-TBX" secondAttribute="trailing" id="bYK-bn-RPH"/>
+                <constraint firstAttribute="bottom" secondItem="uFs-hr-TBX" secondAttribute="bottom" id="fIF-xq-SCo"/>
                 <constraint firstItem="sNN-wv-mGR" firstAttribute="centerX" secondItem="iN0-l3-epB" secondAttribute="centerX" id="jiN-Sm-RBr"/>
                 <constraint firstItem="SDi-mp-UUr" firstAttribute="centerX" secondItem="sNN-wv-mGR" secondAttribute="centerX" id="tE4-3T-Dvd"/>
+                <constraint firstItem="uFs-hr-TBX" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" id="tGx-fw-eM9"/>
             </constraints>
             <connections>
                 <outlet property="alertView" destination="sNN-wv-mGR" id="lA3-KL-zSO"/>

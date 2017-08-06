@@ -17,9 +17,10 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplicationLaunchOptionsKey: Any]?) -> Bool {
         
-        UINavigationBar.appearance().barTintColor = Colors.primary.color
+        UINavigationBar.appearance().barTintColor = Colors.white.color
+        UINavigationBar.appearance().tintColor = LabelStyle.navigation.attributes.textColor
         UINavigationBar.appearance().titleTextAttributes = [NSForegroundColorAttributeName: LabelStyle.navigation.attributes.textColor,
-                                                            NSFontAttributeName: LabelStyle.navigation.attributes.font]
+                                                            NSFontAttributeName: LabelStyle.gameName.attributes.font]
         
         return true
     }
