@@ -15,12 +15,16 @@ class GamesListCollectionViewController: UICollectionViewController, UICollectio
     
     lazy var viewModel: GamesListViewModel = GamesListViewModel(delegate: self)
     private let refreshControl = UIRefreshControl()
+    private var screenID: String {
+        return String(describing: GamesListCollectionViewController.self)
+    }
     
     // MARK: VC Lyfe Cycle
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        title = "Top #50 Games"
+        title = "Top #50 Games".localized
+        navigationController?.navigationBar.accessibilityIdentifier = "\(screenID).navigationbar.title"
         setupRefreshControl()
     }
     
@@ -39,6 +43,7 @@ class GamesListCollectionViewController: UICollectionViewController, UICollectio
             collectionView?.addSubview(refreshControl)
         }
         refreshControl.addTarget(self, action: #selector(fetchRemoteService), for: .valueChanged)
+        refreshControl.accessibilityIdentifier = "\(screenID).refreshControl"
     }
     
     func fetchRemoteService() {
@@ -63,6 +68,7 @@ class GamesListCollectionViewController: UICollectionViewController, UICollectio
     override func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
         let cell: GameListCollectionViewCell = UICollectionViewCell.createCell(collectionView: collectionView, indexPath: indexPath)
         cell.fill(dto: viewModel.getFeaturedGameDTO(at: indexPath.item))
+        cell.accessibilityIdentifier = "\(screenID).collectionviewcell.section_\(indexPath.section).item_\(indexPath.item)"
         return cell
     }
     
@@ -110,6 +116,9 @@ class GamesListCollectionViewController: UICollectionViewController, UICollectio
     }
     
     var connectionErrorAlertDTO: AlertDTO {
-        return AlertDTO(title: "Aviso", message: "Ocorreu uma falha na conexão ao carregar os jogos", positiveActionTitle: "Tentar novamente", negativeActionTitle: "Cancelar")
+        return AlertDTO(title: "Aviso".localized,
+                        message: "Ocorreu uma falha na conexão ao carregar os jogos".localized,
+                        positiveActionTitle: "Tentar novamente".localized,
+                        negativeActionTitle: "Cancelar".localized)
     }
 }

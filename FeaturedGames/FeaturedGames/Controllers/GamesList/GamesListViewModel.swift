@@ -48,22 +48,19 @@ class GamesListViewModel {
         }
         return GameListViewDTO(imageURL: featuredGame.game?.box?.large ?? "",
                                name: featuredGame.game?.name ?? "",
-                               rankingPosition: item+1)
+                               rankingPosition: item + 1)
     }
     
     // MARK: Remote Service
     
     func fetchRanking() {
-        DispatchQueue.global().async {
-            sleep(6)
-            self.rankingService.fetchRanking { ranking, error in
-                guard let ranking = ranking, error == nil else {
-                    self.delegate?.fetchedRanking(success: true, foundedLocalData: true)
-                    return
-                }
-                self.currentRanking = ranking
+        self.rankingService.fetchRanking { ranking, error in
+            guard let ranking = ranking, error == nil else {
                 self.delegate?.fetchedRanking(success: true, foundedLocalData: true)
+                return
             }
+            self.currentRanking = ranking
+            self.delegate?.fetchedRanking(success: true, foundedLocalData: true)
         }
     }
     

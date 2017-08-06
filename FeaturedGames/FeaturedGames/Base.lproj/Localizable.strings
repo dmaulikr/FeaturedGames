@@ -1,0 +1,14 @@
+/*
+ Localizable.strings
+ FeaturedGames
+
+ Created by Cauê Silva on 05/08/17.
+ Copyright © 2017 Caue Alves. All rights reserved.
+ */
+
+"Top #50 Games" = "Top #50 Games";
+"Aviso" = "Aviso";
+"Ocorreu uma falha na conexão ao carregar os jogos" = "Ocorreu uma falha na conexão ao carregar os jogos";
+"Tentar novamente" = "Tentar novamente";
+"Cancelar" = "Cancelar";
+"carregando jogos..." = "carregando jogos...";

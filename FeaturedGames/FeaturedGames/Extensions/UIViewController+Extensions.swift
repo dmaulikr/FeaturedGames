@@ -27,7 +27,7 @@ extension UIViewController {
         present(alertController, animated: true, completion: nil)
     }
     
-    func showLoader(with message: String = "carregando jogos...") {
+    func showLoader(with message: String = "carregando jogos...".localized) {
         let loader: LoaderView = UIView.fromNib()
         loader.frame = CGRect(x: 0, y: 0, width: view.frame.size.width, height: view.frame.size.height)
         let window = UIApplication.shared.keyWindow

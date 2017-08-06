@@ -9,10 +9,14 @@
 import Foundation
 import UIKit
 
-struct GameListViewDTO {
+struct GameListViewDTO: Equatable {
     var imageURL = ""
     var name = ""
     var rankingPosition = 0
+    
+    static func == (lhs: GameListViewDTO, rhs: GameListViewDTO) -> Bool {
+        return lhs.imageURL == rhs.imageURL && lhs.name == rhs.name && lhs.rankingPosition == rhs.rankingPosition
+    }
 }
 
 class GameListView: UIView {
