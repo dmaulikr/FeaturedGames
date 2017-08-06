@@ -11,12 +11,25 @@ import ObjectMapper
 
 public typealias JSONDictionary = [String: Any]
 
+struct HTTPResponse {
+    let result: Any?
+    let error: ErrorType?
+}
+
+enum HTTPMethod: String {
+    case get = "GET"
+    case post = "POST"
+    case put = "PUT"
+    case delete = "DELETE"
+}
+
 enum ErrorType: Error, Equatable {
     
     case noContent
     case notFound
     case unavailableServer
-    case apiError
+    case networkError
+    case parserError
     
     static func errorFromCode(code: Int) -> ErrorType? {
         switch code {
@@ -29,7 +42,7 @@ enum ErrorType: Error, Equatable {
         case 503:
             return .unavailableServer
         default:
-            return .apiError
+            return .networkError
         }
     }
 }
@@ -41,9 +54,44 @@ precedencegroup ExponentiativePrecedence {
 
 infix operator <*> :ExponentiativePrecedence
 
+func <*> <T: Mappable>(json: [Any]?, type: T.Type) -> (object: [T]?, error: ErrorType?) {
+    guard let array = json as? [JSONDictionary] else {
+        return (nil, .parserError)
+    }
+    return (array.map { T(JSON: $0)! }, nil)
+}
+
+func <*> <T: Mappable>(json: Any?, type: T.Type) -> (object: T?, error: ErrorType?) {
+    guard let json = json as? JSONDictionary else {
+        return (nil, .parserError)
+    }
+    return (T(JSON: json), nil)
+}
+
+func <*> <T: Mappable>(json: JSONDictionary?, type: T.Type) -> (object: T?, error: ErrorType?) {
+    guard let json = json else {
+        return (nil, .parserError)
+    }
+    return (T(JSON: json), nil)
+}
+
+func <*> <T: Mappable>(json: [JSONDictionary]?, response: (type: T.Type, error: ErrorType?)) -> (object: [T]?, error: ErrorType?) {
+    guard let array = json else {
+        return (nil, response.error ?? .parserError)
+    }
+    return (array.map { T(JSON: $0)! }, nil)
+}
+
+func <*> <T: Mappable>(json: Any?, response: (type: T.Type, error: ErrorType?)) -> (object: T?, error: ErrorType?) {
+    guard let json = json as? JSONDictionary else {
+        return (nil, response.error ?? .parserError)
+    }
+    return (T(JSON: json), nil)
+}
+
 func <*> <T: Mappable>(json: JSONDictionary?, response: (type: T.Type, error: ErrorType?)) -> (object: T?, error: ErrorType?) {
     guard let json = json else {
-        return (nil, response.error ?? .apiError)
+        return (nil, response.error ?? .parserError)
     }
     return (T(JSON: json), nil)
 }

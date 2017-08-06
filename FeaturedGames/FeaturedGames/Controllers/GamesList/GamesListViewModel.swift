@@ -27,7 +27,7 @@ class GamesListViewModel {
     
     // MARK: Init
     
-    init(delegate: GamesListDelegate, serviceType: GamesRankingRemoteService.Type = GamesRankingMockRequest.self) {
+    init(delegate: GamesListDelegate, serviceType: GamesRankingRemoteService.Type = GamesRankingRequest.self) {
         self.delegate = delegate
         self.serviceType = serviceType
     }
@@ -54,9 +54,9 @@ class GamesListViewModel {
     // MARK: Remote Service
     
     func fetchRanking() {
-        self.rankingService.fetchRanking { ranking, error in
+        rankingService.fetchRanking { ranking, error in
             guard let ranking = ranking, error == nil else {
-                self.delegate?.fetchedRanking(success: true, foundedLocalData: true)
+                self.delegate?.fetchedRanking(success: false, foundedLocalData: true)
                 return
             }
             self.currentRanking = ranking

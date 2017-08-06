@@ -25,16 +25,11 @@ class GamesListCollectionViewController: UICollectionViewController, UICollectio
         super.viewDidLoad()
         addSpecialNavigation(with: "Top #50 Games".localized, and: screenID)
         setupRefreshControl()
-    }
-    
-    override func viewDidAppear(_ animated: Bool) {
-        super.viewDidAppear(animated)
         fetchRemoteService()
     }
     
     private func setupRefreshControl() {
-        refreshControl.attributedTitle = NSAttributedString(string: "",
-                                                            attributes: [NSForegroundColorAttributeName: Colors.primary.color])
+        refreshControl.attributedTitle = NSAttributedString(string: "", attributes: [NSForegroundColorAttributeName: Colors.primary.color])
         refreshControl.tintColor = Colors.primary.color
         if #available(iOS 10.0, *) {
             collectionView?.refreshControl = refreshControl
@@ -47,7 +42,6 @@ class GamesListCollectionViewController: UICollectionViewController, UICollectio
     
     func fetchRemoteService() {
         DispatchQueue.main.safeAsync {
-            sleep(1)
             self.view.isUserInteractionEnabled = false
             self.showLoader()
             self.refreshControl.beginRefreshing()
@@ -74,6 +68,12 @@ class GamesListCollectionViewController: UICollectionViewController, UICollectio
     
     func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, sizeForItemAt indexPath: IndexPath) -> CGSize {
         return CGSize(width: cellWidth, height: cellWidth * 1.56)
+    }
+    
+    override func collectionView(_ collectionView: UICollectionView, didEndDisplaying cell: UICollectionViewCell, forItemAt indexPath: IndexPath) {
+        if let cell = cell as? GameListCollectionViewCell {
+            cell.cancelImageDownload()
+        }
     }
     
     // MARK: Cell size calculus

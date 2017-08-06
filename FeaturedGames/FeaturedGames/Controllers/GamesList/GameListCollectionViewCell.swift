@@ -21,4 +21,8 @@ class GameListCollectionViewCell: UICollectionViewCell {
         view.fill(dto: dto)
     }
     
+    func cancelImageDownload() {
+        view.imageView.pin_cancelImageDownload()
+    }
+    
 }
