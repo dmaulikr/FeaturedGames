@@ -30,9 +30,6 @@
                                     <rect key="frame" x="0.0" y="0.0" width="180" height="282"/>
                                     <autoresizingMask key="autoresizingMask"/>
                                 </view>
-                                <connections>
-                                    <segue destination="FSc-qQ-blz" kind="show" id="hYH-xc-hRZ"/>
-                                </connections>
                             </collectionViewCell>
                         </cells>
                         <connections>
@@ -46,10 +43,10 @@
             </objects>
             <point key="canvasLocation" x="708" y="144.3778110944528"/>
         </scene>
-        <!--Table View Controller-->
+        <!--Game Detail Table View Controller-->
         <scene sceneID="hEc-Pd-h4K">
             <objects>
-                <tableViewController id="FSc-qQ-blz" sceneMemberID="viewController">
+                <tableViewController storyboardIdentifier="GameDetailTableViewController" useStoryboardIdentifierAsRestorationIdentifier="YES" id="FSc-qQ-blz" customClass="GameDetailTableViewController" customModule="FeaturedGames" customModuleProvider="target" sceneMemberID="viewController">
                     <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" id="hY1-23-K2V">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>

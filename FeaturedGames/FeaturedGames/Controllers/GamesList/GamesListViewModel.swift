@@ -42,6 +42,8 @@ class GamesListViewModel {
         return currentRanking?.featuredGames.count ?? 0
     }
     
+    // MARK: DTO
+    
     func getFeaturedGameDTO(at item: Int) -> GameListViewDTO {
         guard let featuredGame = currentRanking?.featuredGames.object(index: item) else {
             return GameListViewDTO()
@@ -49,6 +51,12 @@ class GamesListViewModel {
         return GameListViewDTO(imageURL: featuredGame.game?.box?.large ?? "",
                                name: featuredGame.game?.name ?? "",
                                rankingPosition: item + 1)
+    }
+    
+    // MARK: Transporter
+    
+    func gameForTransporter(at index: Int) -> FeaturedGame? {
+        return currentRanking?.featuredGames.object(index: index)
     }
     
     // MARK: Remote Service

@@ -76,6 +76,13 @@ class GamesListCollectionViewController: UICollectionViewController, UICollectio
         }
     }
     
+    override func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
+        if let game = viewModel.gameForTransporter(at: indexPath.item) {
+            navigationController?.pushViewController(GameDetailControllerBuilder(featureGame: game, position: indexPath.item + 1).build(),
+                                                     animated: true)
+        }
+    }
+    
     // MARK: Cell size calculus
     
     var cellWidth: CGFloat {
