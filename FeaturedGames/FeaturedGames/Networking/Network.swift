@@ -24,7 +24,6 @@ enum HTTPMethod: String {
 }
 
 enum ErrorType: Error, Equatable {
-    
     case noContent
     case notFound
     case unavailableServer

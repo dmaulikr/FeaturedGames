@@ -34,4 +34,11 @@ extension XCTestCase {
                         negativeActionTitle: nil)
     }
     
+    var mockedGameDetailTransporter: Transporter<Any>? {
+        if let mockedGame = mockedGamesRanking.featuredGames.first {
+            return Transporter(data: (mockedGame, 1))
+        }
+        return nil
+    }
+    
 }

@@ -44,7 +44,7 @@ extension UIViewController {
     func addSpecialNavigation(with title: String, and id: String = "") {
         let titleLabel = UILabel()
         self.title = ""
-        titleLabel.fill(with: title, and: LabelStyle.navigation)
+        titleLabel.fill(with: title, and: .navigation)
         titleLabel.sizeToFit()
         titleLabel.accessibilityIdentifier = "\(id).navigation.title"
         navigationItem.leftBarButtonItem = UIBarButtonItem(customView: titleLabel)

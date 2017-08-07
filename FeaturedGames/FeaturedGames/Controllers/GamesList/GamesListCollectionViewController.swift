@@ -62,7 +62,7 @@ class GamesListCollectionViewController: UICollectionViewController, UICollectio
     override func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
         let cell: GameListCollectionViewCell = UICollectionViewCell.createCell(collectionView: collectionView, indexPath: indexPath)
         cell.fill(dto: viewModel.getFeaturedGameDTO(at: indexPath.item))
-        cell.accessibilityIdentifier = "\(screenID).collectionviewcell.section_\(indexPath.section).item_\(indexPath.item)"
+        cell.accessibilityIdentifier = "\(screenID).\(String(describing: GameListCollectionViewCell.self)).section_\(indexPath.section).item_\(indexPath.item)"
         return cell
     }
     
@@ -78,8 +78,7 @@ class GamesListCollectionViewController: UICollectionViewController, UICollectio
     
     override func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
         if let game = viewModel.gameForTransporter(at: indexPath.item) {
-            navigationController?.pushViewController(GameDetailControllerBuilder(featureGame: game, position: indexPath.item + 1).build(),
-                                                     animated: true)
+            navigationController?.pushViewController(GameDetailControllerBuilder(featureGame: game, position: indexPath.item + 1).build(), animated: true)
         }
     }
     
@@ -114,6 +113,7 @@ class GamesListCollectionViewController: UICollectionViewController, UICollectio
                     if action.title == self.connectionErrorAlertDTO.positiveActionTitle {
                         if !foundedLocalData {
                             self.showLoader()
+                            // TODO:
                         }
                         self.fetchRemoteService()
                     }
