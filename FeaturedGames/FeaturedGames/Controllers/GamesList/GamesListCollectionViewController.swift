@@ -23,7 +23,7 @@ class GamesListCollectionViewController: UICollectionViewController, UICollectio
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        addSpecialNavigation(with: "Top #50 Games".localized, and: screenID)
+        addSpecialNavigation(with: "#50 Games".localized, and: screenID)
         setupRefreshControl()
         fetchRemoteService()
     }

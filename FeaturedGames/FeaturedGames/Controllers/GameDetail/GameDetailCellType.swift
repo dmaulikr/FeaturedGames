@@ -21,9 +21,9 @@ enum GameDetailCellType: Int {
     var height: CGFloat {
         switch self {
         case .image:
-            return 50
+            return UIScreen.main.bounds.size.width * 1.2
         case .name:
-            return 50
+            return 68
         case .infos:
             return 50
         }

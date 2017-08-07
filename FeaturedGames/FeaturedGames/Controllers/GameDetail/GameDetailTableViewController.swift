@@ -12,6 +12,7 @@ class GameDetailTableViewController: UITableViewController {
 
     // MARK: Properties
     
+    @IBOutlet weak var shareButton: UIBarButtonItem!
     lazy var viewModel: GameDetailViewModel = GameDetailViewModel()
     private var screenID: String {
         return String(describing: GameDetailTableViewController.self)
@@ -22,11 +23,11 @@ class GameDetailTableViewController: UITableViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         registerCells()
-        setupShareButton()
     }
     
-    private func setupShareButton() {
-        
+    override func viewWillAppear(_ animated: Bool) {
+        super.viewWillAppear(animated)
+        tableView.reloadData()
     }
     
     // MARK: UITableViewDataSource
@@ -40,11 +41,15 @@ class GameDetailTableViewController: UITableViewController {
     }
     
     override func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
-        return UITableViewAutomaticDimension
+        return GameDetailCellType(row: indexPath.row).height
     }
     
-    override func tableView(_ tableView: UITableView, estimatedHeightForRowAt indexPath: IndexPath) -> CGFloat {
-        return GameDetailCellType(row: indexPath.row).height
+    override func tableView(_ tableView: UITableView, heightForHeaderInSection section: Int) -> CGFloat {
+        return .leastNonzeroMagnitude
+    }
+    
+    override func tableView(_ tableView: UITableView, heightForFooterInSection section: Int) -> CGFloat {
+        return .leastNonzeroMagnitude
     }
     
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
@@ -62,6 +67,7 @@ class GameDetailTableViewController: UITableViewController {
     
     private func registerCells() {
         tableView.registerCell(identifier: String(describing: GameDetailImageTableViewCell.self))
+        tableView.registerCell(identifier: String(describing: GameDetailNameTableViewCell.self))
     }
     
     private func fillGameDetailImageCell(tableView: UITableView, indexPath: IndexPath) -> UITableViewCell {
@@ -72,7 +78,10 @@ class GameDetailTableViewController: UITableViewController {
     }
     
     private func fillGameDetailNameCell(tableView: UITableView, indexPath: IndexPath) -> UITableViewCell {
-        return UITableViewCell()
+        let cell: GameDetailNameTableViewCell = UITableViewCell.createCell(tableView: tableView, indexPath: indexPath)
+        cell.fill(name: viewModel.gameName)
+        cell.accessibilityIdentifier = "\(screenID).\(String(describing: GameDetailNameTableViewCell.self)).section_\(indexPath.section).row_\(indexPath.row))"
+        return cell
     }
     
     private func fillGameDetailInfosCell(tableView: UITableView, indexPath: IndexPath) -> UITableViewCell {
@@ -83,5 +92,20 @@ class GameDetailTableViewController: UITableViewController {
     
     func prepareForNavigation(transporter: Transporter<Any>) {
         viewModel.prepareForNavigation(transporter: transporter)
+    }
+    
+    // MARK: Share
+    
+    @IBAction func shareGame() {
+        guard let shareData = viewModel.shareData else {
+            return
+        }
+        let activityController = UIActivityViewController(activityItems: [shareData], applicationActivities: nil)
+        DispatchQueue.main.safeAsync {
+            self.showLoader(with: "compartilhando...".localized)
+            self.present(activityController, animated: true, completion: {
+                self.stopLoader()
+            })
+        }
     }
 }

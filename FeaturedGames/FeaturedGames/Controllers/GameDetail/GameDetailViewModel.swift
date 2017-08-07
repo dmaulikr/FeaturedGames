@@ -47,6 +47,16 @@ class GameDetailViewModel {
         return infos
     }
     
+    var shareData: String? {
+        guard let position = position, let appName = Bundle.main.object(forInfoDictionaryKey: "CFBundleName") as? String else {
+            return nil
+        }
+        var message = "\("Você sabia que o jogo".localized) \(gameName) \("está em".localized) #\(position) \("entre os destaques do Twitch?".localized) 👾"
+        message += "\n\n\(gameImage)"
+        message += "\n\n\("Veja a lista completa no app".localized) \(appName) 🎮"
+        return message
+    }
+    
     // MARK: Transporter
     
     func prepareForNavigation(transporter: Transporter<Any>) {

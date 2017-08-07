@@ -43,20 +43,20 @@
             </objects>
             <point key="canvasLocation" x="708" y="144.3778110944528"/>
         </scene>
-        <!--Game Detail Table View Controller-->
+        <!-- -->
         <scene sceneID="hEc-Pd-h4K">
             <objects>
                 <tableViewController storyboardIdentifier="GameDetailTableViewController" useStoryboardIdentifierAsRestorationIdentifier="YES" id="FSc-qQ-blz" customClass="GameDetailTableViewController" customModule="FeaturedGames" customModuleProvider="target" sceneMemberID="viewController">
-                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" id="hY1-23-K2V">
+                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="grouped" separatorStyle="none" allowsSelection="NO" rowHeight="44" sectionHeaderHeight="18" sectionFooterHeight="18" id="hY1-23-K2V">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <prototypes>
                             <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" id="qPv-5O-NvI">
-                                <rect key="frame" x="0.0" y="28" width="375" height="44"/>
+                                <rect key="frame" x="0.0" y="55.5" width="375" height="44"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="qPv-5O-NvI" id="SdB-k1-uOL">
-                                    <rect key="frame" x="0.0" y="0.0" width="375" height="43.5"/>
+                                    <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
                                     <autoresizingMask key="autoresizingMask"/>
                                 </tableViewCellContentView>
                             </tableViewCell>
@@ -66,7 +66,16 @@
                             <outlet property="delegate" destination="FSc-qQ-blz" id="1vX-76-jlB"/>
                         </connections>
                     </tableView>
-                    <navigationItem key="navigationItem" id="mzt-at-gMo"/>
+                    <navigationItem key="navigationItem" title=" " id="isc-gQ-mff">
+                        <barButtonItem key="rightBarButtonItem" style="done" systemItem="action" id="AAo-tt-pQO">
+                            <connections>
+                                <action selector="shareGame" destination="FSc-qQ-blz" id="3hT-4S-RV6"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
+                    <connections>
+                        <outlet property="shareButton" destination="AAo-tt-pQO" id="0wI-uJ-BxD"/>
+                    </connections>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="jWa-oG-RKe" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
