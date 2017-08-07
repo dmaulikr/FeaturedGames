@@ -63,4 +63,18 @@ class ViewControllerExtensionsTest: XCTestCase {
         controller.stopLoader()
         XCTAssertFalse(UIApplication.shared.keyWindow!.subviews.contains(where: { $0.isKind(of: LoaderView.self) } ))
     }
+    
+    func testAddSpecialNavigation() {
+        controller.addSpecialNavigation(with: "testing title", and: "testing_id")
+        XCTAssertNotNil(controller.navigationItem.leftBarButtonItem)
+        XCTAssertNotNil(controller.navigationItem.leftBarButtonItem?.customView)
+        
+        guard let item = controller.navigationItem.leftBarButtonItem?.customView as? UILabel else {
+            XCTFail()
+            return
+        }
+        
+        item.text = "testing title"
+        item.accessibilityIdentifier = "testing_id.navigation.title"
+    }
 }

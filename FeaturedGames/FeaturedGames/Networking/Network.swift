@@ -33,10 +33,10 @@ enum ErrorType: Error, Equatable {
     
     static func errorFromCode(code: Int) -> ErrorType? {
         switch code {
-        case 200...299:
-            return nil
         case 204:
             return .noContent
+        case 200...299:
+            return nil
         case 404:
             return .notFound
         case 503:
