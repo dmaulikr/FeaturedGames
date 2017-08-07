@@ -25,11 +25,6 @@ class GameDetailTableViewController: UITableViewController {
         registerCells()
     }
     
-    override func viewWillAppear(_ animated: Bool) {
-        super.viewWillAppear(animated)
-        tableView.reloadData()
-    }
-    
     // MARK: UITableViewDataSource
 
     override func numberOfSections(in tableView: UITableView) -> Int {
@@ -85,7 +80,10 @@ class GameDetailTableViewController: UITableViewController {
     }
     
     private func fillGameDetailInfosCell(tableView: UITableView, indexPath: IndexPath) -> UITableViewCell {
-        return UITableViewCell()
+        let cell: GameInfosTableViewCell = UITableViewCell.createCell(tableView: tableView, indexPath: indexPath)
+        cell.fill(infos: viewModel.gameInfos)
+        cell.accessibilityIdentifier = "\(screenID).\(String(describing: GameInfosTableViewCell.self)).section_\(indexPath.section).row_\(indexPath.row))"
+        return cell
     }
     
     // MARK: Transporter

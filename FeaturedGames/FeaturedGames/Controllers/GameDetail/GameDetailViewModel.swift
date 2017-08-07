@@ -67,5 +67,3 @@ class GameDetailViewModel {
     }
     
 }
-
-typealias GameDetailInfo = (key: String, value: Int)

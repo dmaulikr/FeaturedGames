@@ -16,3 +16,11 @@ extension UICollectionViewCell {
     }
     
 }
+
+extension UICollectionView {
+    
+    func registerCell(identifier: String) {
+        register(UINib(nibName: identifier, bundle: nil), forCellWithReuseIdentifier: identifier)
+    }
+    
+}

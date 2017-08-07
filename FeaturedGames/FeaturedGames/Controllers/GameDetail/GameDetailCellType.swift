@@ -25,7 +25,7 @@ enum GameDetailCellType: Int {
         case .name:
             return 68
         case .infos:
-            return 50
+            return 100
         }
     }
     
