@@ -29,25 +29,16 @@ class FeaturedGamePersister: FeaturedGamePersisterProtocol {
     
     func save(featuredGames: [FeaturedGame], completion: @escaping (_ success: Bool) -> Void) {
         for (index, featuredGame) in featuredGames.enumerated() {
-            if #available(iOS 10.0, *) {
-                let object = FeaturedGameObject(context: LocalDataManager.managedObjectContext)
-                object.name = featuredGame.game?.name ?? ""
-                object.imageURL = featuredGame.game?.box?.large ?? ""
-                object.position = Int32(index)
-                object.viewers = Int32(featuredGame.viewers)
-                object.channels = Int32(featuredGame.channels)
-            } else {
-                let entityDescriptor = NSEntityDescription.entity(forEntityName: entityName, in: LocalDataManager.managedObjectContext)
-                let object = FeaturedGameObject(entity: entityDescriptor ?? NSEntityDescription(),
-                                                insertInto: LocalDataManager.managedObjectContext)
+            if let object = NSEntityDescription.insertNewObject(forEntityName: entityName,
+                                                                into: LocalDataManager.managedObjectContext) as? FeaturedGameObject {
                 object.name = featuredGame.game?.name ?? ""
                 object.imageURL = featuredGame.game?.box?.large ?? ""
                 object.position = Int32(index)
                 object.viewers = Int32(featuredGame.viewers)
                 object.channels = Int32(featuredGame.channels)
             }
-            LocalDataManager.saveContext()
         }
+        LocalDataManager.saveContext()
         completion(true)
     }
     

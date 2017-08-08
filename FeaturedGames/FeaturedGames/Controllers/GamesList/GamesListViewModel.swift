@@ -64,21 +64,6 @@ class GamesListViewModel {
         return currentFeaturedGames.object(index: index)
     }
     
-    // MARK: Remote Service
-    
-    private func saveLocalData() {
-        let managedContext = dataManager.persistentContainer.viewContext
-        guard let entity = NSEntityDescription.entity(forEntityName: "FeaturedGameObject", in: managedContext) else {
-            return
-        }
-        // manage object setValue
-        do {
-            try managedContext.save()
-        } catch _ as NSError {
-            print("")
-        }
-    }
-    
     func fetchRemoteRanking() {
         rankingService.fetchRanking { ranking, error in
             guard let ranking = ranking, !ranking.featuredGames.isEmpty , error == nil else {
@@ -104,8 +89,12 @@ class GamesListViewModel {
     }
     
     private func saveLocalRanking(ranking: [FeaturedGame]) {
-        FeaturedGamePersister().delete { _ in }
-        FeaturedGamePersister().save(featuredGames: ranking) { _ in }
+        FeaturedGamePersister().delete { _ in
+            FeaturedGamePersister().save(featuredGames: ranking, completion: { _ in })
+        }
+        
+//        FeaturedGamePersister().delete { _ in }
+//        FeaturedGamePersister().save(featuredGames: ranking) { _ in }
     }
     
 }
