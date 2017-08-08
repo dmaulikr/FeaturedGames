@@ -15,7 +15,7 @@ class GamesListViewModelTest: XCTestCase {
     
     override func setUp() {
         super.setUp()
-        viewModel.fetchRanking()
+        viewModel.fetchRemoteRanking()
     }
     
     override func tearDown() {

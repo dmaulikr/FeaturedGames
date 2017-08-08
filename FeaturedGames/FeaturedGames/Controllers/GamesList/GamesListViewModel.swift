@@ -92,9 +92,6 @@ class GamesListViewModel {
         FeaturedGamePersister().delete { _ in
             FeaturedGamePersister().save(featuredGames: ranking, completion: { _ in })
         }
-        
-//        FeaturedGamePersister().delete { _ in }
-//        FeaturedGamePersister().save(featuredGames: ranking) { _ in }
     }
     
 }
