@@ -7,6 +7,7 @@
 //
 
 import Foundation
+import CoreData
 
 // MARK: View Model Protocol
 
@@ -14,10 +15,12 @@ protocol GamesListDelegate: class {
     func fetchedRanking(success: Bool, foundedLocalData: Bool)
 }
 
+@available(iOS 10.0, *)
 class GamesListViewModel {
     
     // MARK: Properties
     
+    private let dataManager = LocalDataManager()
     private var currentRanking: GamesRanking?
     private weak var delegate: GamesListDelegate?
     private var serviceType: GamesRankingRemoteService.Type
@@ -67,6 +70,7 @@ class GamesListViewModel {
                 self.delegate?.fetchedRanking(success: false, foundedLocalData: true)
                 return
             }
+            self.fetchLocalData()
             self.currentRanking = ranking
             self.delegate?.fetchedRanking(success: true, foundedLocalData: true)
         }
@@ -75,10 +79,40 @@ class GamesListViewModel {
     // MARK: Local Service
     
     private func saveLocalData() {
+        let managedContext = dataManager.persistentContainer.viewContext
+        guard let entity = NSEntityDescription.entity(forEntityName: "FeaturedGameObject", in: managedContext) else {
+              return
+        }
+        // manage object setValue
         
+        do {
+            try managedContext.save()
+        } catch _ as NSError {
+            print("")
+        }
     }
     
-    private func fetchLocalData() {
-        
+    func fetchLocalData() {
+        let fetchRequest = NSFetchRequest<NSFetchRequestResult>(entityName: "FeaturedGameObject")
+        let context = dataManager.persistentContainer.viewContext
+        do {
+            let results = try context.fetch(fetchRequest)
+            if let results = results as? [FeaturedGameObject] {
+                print(results)
+            }
+        } catch {
+            print("")
+        }
+    }
+    
+    func deleteAll() {
+        let fetch = NSFetchRequest<NSFetchRequestResult>(entityName: "FeaturedGameObject")
+        let request = NSBatchDeleteRequest(fetchRequest: fetch)
+        let context = dataManager.persistentContainer.viewContext
+        do {
+            try context.execute(request)
+        } catch _ as NSError {
+            print("")
+        }
     }
 }

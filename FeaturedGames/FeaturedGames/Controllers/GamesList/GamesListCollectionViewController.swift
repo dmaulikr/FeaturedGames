@@ -9,6 +9,7 @@
 import UIKit
 import Foundation
 
+@available(iOS 10.0, *)
 class GamesListCollectionViewController: UICollectionViewController, UICollectionViewDelegateFlowLayout, GamesListDelegate {
     
     // MARK: Properties
