@@ -28,6 +28,11 @@ struct Game: Mappable {
     init() {
     }
     
+    init(name: String, imageURL: String) {
+        self.name = name
+        box = GameImages(imageURL: imageURL)
+    }
+    
     mutating func mapping(map: Map) {
         name <- map["name"]
         popularity <- map["popularity"]

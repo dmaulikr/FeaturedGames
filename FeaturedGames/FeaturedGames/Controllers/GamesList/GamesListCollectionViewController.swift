@@ -9,7 +9,6 @@
 import UIKit
 import Foundation
 
-@available(iOS 10.0, *)
 class GamesListCollectionViewController: UICollectionViewController, UICollectionViewDelegateFlowLayout, GamesListDelegate {
     
     // MARK: Properties
@@ -27,6 +26,7 @@ class GamesListCollectionViewController: UICollectionViewController, UICollectio
         addSpecialNavigation(with: "#50 Games".localized, and: screenID)
         setupRefreshControl()
         fetchRemoteService()
+        fetchLocalService()
     }
     
     private func setupRefreshControl() {
@@ -47,7 +47,11 @@ class GamesListCollectionViewController: UICollectionViewController, UICollectio
             self.showLoader()
             self.refreshControl.beginRefreshing()
         }
-        viewModel.fetchRanking()
+        viewModel.fetchRemoteRanking()
+    }
+    
+    func fetchLocalService() {
+        viewModel.fetchLocalRanking()
     }
     
     // MARK: UICollectionViewDataSource
@@ -103,19 +107,16 @@ class GamesListCollectionViewController: UICollectionViewController, UICollectio
     
     // MARK: GamesListDelegate
     
-    func fetchedRanking(success: Bool, foundedLocalData: Bool) {
+    func fetchedRemoteRanking(success: Bool, foundedLocalData: Bool) {
         DispatchQueue.main.async {
             self.refreshControl.endRefreshing()
             self.view.isUserInteractionEnabled = true
             self.collectionView?.reloadData()
             self.stopLoader()
             if !success {
-                self.showConnectionErrorAlert(dto: self.connectionErrorAlertDTO, completion: { action in
-                    if action.title == self.connectionErrorAlertDTO.positiveActionTitle {
-                        if !foundedLocalData {
-                            self.showLoader()
-                            // TODO:
-                        }
+                let alertDTO = self.connectionErrorAlertDTO(foundedLocalData: foundedLocalData)
+                self.showConnectionErrorAlert(dto: alertDTO, completion: { action in
+                    if action.title == alertDTO.positiveActionTitle {
                         self.fetchRemoteService()
                     }
                 })
@@ -123,9 +124,18 @@ class GamesListCollectionViewController: UICollectionViewController, UICollectio
         }
     }
     
-    var connectionErrorAlertDTO: AlertDTO {
+    func fetchedLocalRanking() {
+        DispatchQueue.main.safeAsync {
+            self.collectionView?.reloadData()
+        }
+    }
+    
+    func connectionErrorAlertDTO(foundedLocalData: Bool) -> AlertDTO {
+        var message = "Ocorreu uma falha na conexão ao carregar os jogos.".localized
+        message += foundedLocalData ? "\n\("Os dados exibidos podem estar desatualizados.".localized)" : ""
+        message += "\n\("Deseja tentar novamente?".localized)"
         return AlertDTO(title: "Aviso".localized,
-                        message: "Ocorreu uma falha na conexão ao carregar os jogos".localized,
+                        message: message,
                         positiveActionTitle: "Tentar novamente".localized,
                         negativeActionTitle: "Cancelar".localized)
     }

@@ -8,8 +8,9 @@
 
 "#50 Games" = "#50 Games";
 "Aviso" = "Aviso";
-"Ocorreu uma falha na conexão ao carregar os jogos" = "Ocorreu uma falha na conexão ao carregar os jogos";
-"Tentar novamente" = "Tentar novamente";
+"Ocorreu uma falha na conexão ao carregar os jogos." = "Ocorreu uma falha na conexão ao carregar os jogos.";
+"Os dados exibidos podem estar desatualizados." = "Os dados exibidos podem estar desatualizados.";
+"Deseja tentar novamente?" = "Deseja tentar novamente?";
 "Cancelar" = "Cancelar";
 "carregando jogos..." = "carregando jogos...";
 "posição" = "posição";

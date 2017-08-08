@@ -22,6 +22,12 @@ struct FeaturedGame: Mappable {
     init() {
     }
     
+    init(name: String, imageURL: String, viewers: Int, channels: Int) {
+        game = Game(name: name, imageURL: imageURL)
+        self.viewers = viewers
+        self.channels = channels
+    }
+    
     mutating func mapping(map: Map) {
         game <- map["game"]
         viewers <- map["viewers"]

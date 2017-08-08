@@ -12,16 +12,18 @@ import CoreData
 // MARK: View Model Protocol
 
 protocol GamesListDelegate: class {
-    func fetchedRanking(success: Bool, foundedLocalData: Bool)
+    func fetchedRemoteRanking(success: Bool, foundedLocalData: Bool)
+    func fetchedLocalRanking()
 }
 
-@available(iOS 10.0, *)
 class GamesListViewModel {
     
     // MARK: Properties
     
-    private let dataManager = LocalDataManager()
-    private var currentRanking: GamesRanking?
+    private var currentRanking = GamesRanking()
+    private var currentFeaturedGames: [FeaturedGame] {
+        return currentRanking.featuredGames
+    }
     private weak var delegate: GamesListDelegate?
     private var serviceType: GamesRankingRemoteService.Type
     private var rankingService: GamesRankingRemoteService {
@@ -42,13 +44,13 @@ class GamesListViewModel {
     }
     
     var numberOfFeaturedGames: Int {
-        return currentRanking?.featuredGames.count ?? 0
+        return currentFeaturedGames.count
     }
     
     // MARK: DTO
     
     func getFeaturedGameDTO(at item: Int) -> GameListViewDTO {
-        guard let featuredGame = currentRanking?.featuredGames.object(index: item) else {
+        guard let featuredGame = currentFeaturedGames.object(index: item) else {
             return GameListViewDTO()
         }
         return GameListViewDTO(imageURL: featuredGame.game?.box?.large ?? "",
@@ -59,32 +61,17 @@ class GamesListViewModel {
     // MARK: Transporter
     
     func gameForTransporter(at index: Int) -> FeaturedGame? {
-        return currentRanking?.featuredGames.object(index: index)
+        return currentFeaturedGames.object(index: index)
     }
     
     // MARK: Remote Service
     
-    func fetchRanking() {
-        rankingService.fetchRanking { ranking, error in
-            guard let ranking = ranking, error == nil else {
-                self.delegate?.fetchedRanking(success: false, foundedLocalData: true)
-                return
-            }
-            self.fetchLocalData()
-            self.currentRanking = ranking
-            self.delegate?.fetchedRanking(success: true, foundedLocalData: true)
-        }
-    }
-    
-    // MARK: Local Service
-    
     private func saveLocalData() {
         let managedContext = dataManager.persistentContainer.viewContext
         guard let entity = NSEntityDescription.entity(forEntityName: "FeaturedGameObject", in: managedContext) else {
-              return
+            return
         }
         // manage object setValue
-        
         do {
             try managedContext.save()
         } catch _ as NSError {
@@ -92,27 +79,33 @@ class GamesListViewModel {
         }
     }
     
-    func fetchLocalData() {
-        let fetchRequest = NSFetchRequest<NSFetchRequestResult>(entityName: "FeaturedGameObject")
-        let context = dataManager.persistentContainer.viewContext
-        do {
-            let results = try context.fetch(fetchRequest)
-            if let results = results as? [FeaturedGameObject] {
-                print(results)
+    func fetchRemoteRanking() {
+        rankingService.fetchRanking { ranking, error in
+            guard let ranking = ranking, !ranking.featuredGames.isEmpty , error == nil else {
+                self.delegate?.fetchedRemoteRanking(success: false,
+                                                    foundedLocalData: !self.currentFeaturedGames.isEmpty)
+                return
             }
-        } catch {
-            print("")
+            self.currentRanking = ranking
+            self.saveLocalRanking(ranking: ranking.featuredGames)
+            self.delegate?.fetchedRemoteRanking(success: true, foundedLocalData: true)
         }
     }
     
-    func deleteAll() {
-        let fetch = NSFetchRequest<NSFetchRequestResult>(entityName: "FeaturedGameObject")
-        let request = NSBatchDeleteRequest(fetchRequest: fetch)
-        let context = dataManager.persistentContainer.viewContext
-        do {
-            try context.execute(request)
-        } catch _ as NSError {
-            print("")
+    // MARK: Local Service
+    
+    func fetchLocalRanking() {
+        FeaturedGamePersister().fetch { ranking in
+            if !ranking.isEmpty {
+                self.currentRanking.featuredGames = ranking
+                self.delegate?.fetchedLocalRanking()
+            }
         }
     }
+    
+    private func saveLocalRanking(ranking: [FeaturedGame]) {
+        FeaturedGamePersister().delete { _ in }
+        FeaturedGamePersister().save(featuredGames: ranking) { _ in }
+    }
+    
 }

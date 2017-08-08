@@ -23,6 +23,10 @@ struct GameImages: Mappable {
     init() {
     }
     
+    init(imageURL: String) {
+        large = imageURL
+    }
+    
     mutating func mapping(map: Map) {
         large <- map["large"]
         medium <- map["medium"]
