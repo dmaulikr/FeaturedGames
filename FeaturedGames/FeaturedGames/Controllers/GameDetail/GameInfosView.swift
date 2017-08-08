@@ -45,9 +45,25 @@ class GameInfosView: UIView, UICollectionViewDataSource, UICollectionViewDelegat
     }
     
     func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, sizeForItemAt indexPath: IndexPath) -> CGSize {
-        return CGSize(width: 120, height: 85)
+        return CGSize(width: 102, height: 85)
     }
 
+    func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, minimumInteritemSpacingForSectionAt section: Int) -> CGFloat {
+        return 2
+    }
+    
+    func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, minimumLineSpacingForSectionAt section: Int) -> CGFloat {
+        return 2
+    }
+    
+    func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, insetForSectionAt section: Int) -> UIEdgeInsets {
+        let cellsWidth = 102 * CGFloat(infos.count)
+        let spacesBetweenCells = CGFloat(infos.count - 1) * 2
+        let calculatedInset = (collectionView.frame.size.width - (cellsWidth + spacesBetweenCells)) / 2
+        let inset = calculatedInset > 0 ? calculatedInset : 0
+        return UIEdgeInsets(top: 0, left: inset, bottom: 0, right: inset)
+    }
+    
     func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
         let cell: GameInfoCollectionViewCell = UICollectionViewCell.createCell(collectionView: collectionView, indexPath: indexPath)
         if let info = infos.object(index: indexPath.item) {
