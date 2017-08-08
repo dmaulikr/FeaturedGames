@@ -1,0 +1,1259 @@
+{
+    "_total": 1564,
+    "_links": {
+        "self": "https://api.twitch.tv/kraken/games/top?limit=50",
+        "next": "https://api.twitch.tv/kraken/games/top?limit=50&offset=50"
+    },
+    "top": [
+        {
+            "game": {
+                "name": "PLAYERUNKNOWN'S BATTLEGROUNDS",
+                "popularity": 102955,
+                "_id": 493057,
+                "giantbomb_id": 54979,
+                "box": {
+                    "large": "https://static-cdn.jtvnw.net/ttv-boxart/PLAYERUNKNOWN%27S%20BATTLEGROUNDS-272x380.jpg",
+                    "medium": "https://static-cdn.jtvnw.net/ttv-boxart/PLAYERUNKNOWN%27S%20BATTLEGROUNDS-136x190.jpg",
+                    "small": "https://static-cdn.jtvnw.net/ttv-boxart/PLAYERUNKNOWN%27S%20BATTLEGROUNDS-52x72.jpg",
+                    "template": "https://static-cdn.jtvnw.net/ttv-boxart/PLAYERUNKNOWN%27S%20BATTLEGROUNDS-{width}x{height}.jpg"
+                },
+                "logo": {
+                    "large": "https://static-cdn.jtvnw.net/ttv-logoart/PLAYERUNKNOWN%27S%20BATTLEGROUNDS-240x144.jpg",
+                    "medium": "https://static-cdn.jtvnw.net/ttv-logoart/PLAYERUNKNOWN%27S%20BATTLEGROUNDS-120x72.jpg",
+                    "small": "https://static-cdn.jtvnw.net/ttv-logoart/PLAYERUNKNOWN%27S%20BATTLEGROUNDS-60x36.jpg",
+                    "template": "https://static-cdn.jtvnw.net/ttv-logoart/PLAYERUNKNOWN%27S%20BATTLEGROUNDS-{width}x{height}.jpg"
+                },
+                "_links": {},
+                "localized_name": "PLAYERUNKNOWN'S BATTLEGROUNDS",
+                "locale": "pt-br"
+            },
+            "viewers": 102358,
+            "channels": 3089
+        },
+        {
+            "game": {
+                "name": "League of Legends",
+                "popularity": 73010,
+                "_id": 21779,
+                "giantbomb_id": 24024,
+                "box": {
+                    "large": "https://static-cdn.jtvnw.net/ttv-boxart/League%20of%20Legends-272x380.jpg",
+                    "medium": "https://static-cdn.jtvnw.net/ttv-boxart/League%20of%20Legends-136x190.jpg",
+                    "small": "https://static-cdn.jtvnw.net/ttv-boxart/League%20of%20Legends-52x72.jpg",
+                    "template": "https://static-cdn.jtvnw.net/ttv-boxart/League%20of%20Legends-{width}x{height}.jpg"
+                },
+                "logo": {
+                    "large": "https://static-cdn.jtvnw.net/ttv-logoart/League%20of%20Legends-240x144.jpg",
+                    "medium": "https://static-cdn.jtvnw.net/ttv-logoart/League%20of%20Legends-120x72.jpg",
+                    "small": "https://static-cdn.jtvnw.net/ttv-logoart/League%20of%20Legends-60x36.jpg",
+                    "template": "https://static-cdn.jtvnw.net/ttv-logoart/League%20of%20Legends-{width}x{height}.jpg"
+                },
+                "_links": {},
+                "localized_name": "League of Legends",
+                "locale": "pt-br"
+            },
+            "viewers": 71421,
+            "channels": 1993
+        },
+        {
+            "game": {
+                "name": "Hearthstone",
+                "popularity": 40340,
+                "_id": 138585,
+                "giantbomb_id": 42033,
+                "box": {
+                    "large": "https://static-cdn.jtvnw.net/ttv-boxart/Hearthstone-272x380.jpg",
+                    "medium": "https://static-cdn.jtvnw.net/ttv-boxart/Hearthstone-136x190.jpg",
+                    "small": "https://static-cdn.jtvnw.net/ttv-boxart/Hearthstone-52x72.jpg",
+                    "template": "https://static-cdn.jtvnw.net/ttv-boxart/Hearthstone-{width}x{height}.jpg"
+                },
+                "logo": {
+                    "large": "https://static-cdn.jtvnw.net/ttv-logoart/Hearthstone-240x144.jpg",
+                    "medium": "https://static-cdn.jtvnw.net/ttv-logoart/Hearthstone-120x72.jpg",
+                    "small": "https://static-cdn.jtvnw.net/ttv-logoart/Hearthstone-60x36.jpg",
+                    "template": "https://static-cdn.jtvnw.net/ttv-logoart/Hearthstone-{width}x{height}.jpg"
+                },
+                "_links": {},
+                "localized_name": "Hearthstone",
+                "locale": "pt-br"
+            },
+            "viewers": 40265,
+            "channels": 227
+        },
+        {
+            "game": {
+                "name": "IRL",
+                "popularity": 21716,
+                "_id": 494717,
+                "giantbomb_id": 0,
+                "box": {
+                    "large": "https://static-cdn.jtvnw.net/ttv-boxart/IRL-272x380.jpg",
+                    "medium": "https://static-cdn.jtvnw.net/ttv-boxart/IRL-136x190.jpg",
+                    "small": "https://static-cdn.jtvnw.net/ttv-boxart/IRL-52x72.jpg",
+                    "template": "https://static-cdn.jtvnw.net/ttv-boxart/IRL-{width}x{height}.jpg"
+                },
+                "logo": {
+                    "large": "https://static-cdn.jtvnw.net/ttv-logoart/IRL-240x144.jpg",
+                    "medium": "https://static-cdn.jtvnw.net/ttv-logoart/IRL-120x72.jpg",
+                    "small": "https://static-cdn.jtvnw.net/ttv-logoart/IRL-60x36.jpg",
+                    "template": "https://static-cdn.jtvnw.net/ttv-logoart/IRL-{width}x{height}.jpg"
+                },
+                "_links": {},
+                "localized_name": "IRL",
+                "locale": "pt-br"
+            },
+            "viewers": 33621,
+            "channels": 389
+        },
+        {
+            "game": {
+                "name": "The Joy Of Sex",
+                "popularity": 22455,
+                "_id": 24363,
+                "giantbomb_id": 26988,
+                "box": {
+                    "large": "https://static-cdn.jtvnw.net/ttv-boxart/The%20Joy%20Of%20Sex-272x380.jpg",
+                    "medium": "https://static-cdn.jtvnw.net/ttv-boxart/The%20Joy%20Of%20Sex-136x190.jpg",
+                    "small": "https://static-cdn.jtvnw.net/ttv-boxart/The%20Joy%20Of%20Sex-52x72.jpg",
+                    "template": "https://static-cdn.jtvnw.net/ttv-boxart/The%20Joy%20Of%20Sex-{width}x{height}.jpg"
+                },
+                "logo": {
+                    "large": "https://static-cdn.jtvnw.net/ttv-logoart/The%20Joy%20Of%20Sex-240x144.jpg",
+                    "medium": "https://static-cdn.jtvnw.net/ttv-logoart/The%20Joy%20Of%20Sex-120x72.jpg",
+                    "small": "https://static-cdn.jtvnw.net/ttv-logoart/The%20Joy%20Of%20Sex-60x36.jpg",
+                    "template": "https://static-cdn.jtvnw.net/ttv-logoart/The%20Joy%20Of%20Sex-{width}x{height}.jpg"
+                },
+                "_links": {},
+                "localized_name": "The Joy Of Sex",
+                "locale": "pt-br"
+            },
+            "viewers": 21894,
+            "channels": 5
+        },
+        {
+            "game": {
+                "name": "Grand Theft Auto V",
+                "popularity": 21441,
+                "_id": 32982,
+                "giantbomb_id": 36765,
+                "box": {
+                    "large": "https://static-cdn.jtvnw.net/ttv-boxart/Grand%20Theft%20Auto%20V-272x380.jpg",
+                    "medium": "https://static-cdn.jtvnw.net/ttv-boxart/Grand%20Theft%20Auto%20V-136x190.jpg",
+                    "small": "https://static-cdn.jtvnw.net/ttv-boxart/Grand%20Theft%20Auto%20V-52x72.jpg",
+                    "template": "https://static-cdn.jtvnw.net/ttv-boxart/Grand%20Theft%20Auto%20V-{width}x{height}.jpg"
+                },
+                "logo": {
+                    "large": "https://static-cdn.jtvnw.net/ttv-logoart/Grand%20Theft%20Auto%20V-240x144.jpg",
+                    "medium": "https://static-cdn.jtvnw.net/ttv-logoart/Grand%20Theft%20Auto%20V-120x72.jpg",
+                    "small": "https://static-cdn.jtvnw.net/ttv-logoart/Grand%20Theft%20Auto%20V-60x36.jpg",
+                    "template": "https://static-cdn.jtvnw.net/ttv-logoart/Grand%20Theft%20Auto%20V-{width}x{height}.jpg"
+                },
+                "_links": {},
+                "localized_name": "Grand Theft Auto V",
+                "locale": "pt-br"
+            },
+            "viewers": 21373,
+            "channels": 544
+        },
+        {
+            "game": {
+                "name": "Dota 2",
+                "popularity": 19720,
+                "_id": 29595,
+                "giantbomb_id": 32887,
+                "box": {
+                    "large": "https://static-cdn.jtvnw.net/ttv-boxart/Dota%202-272x380.jpg",
+                    "medium": "https://static-cdn.jtvnw.net/ttv-boxart/Dota%202-136x190.jpg",
+                    "small": "https://static-cdn.jtvnw.net/ttv-boxart/Dota%202-52x72.jpg",
+                    "template": "https://static-cdn.jtvnw.net/ttv-boxart/Dota%202-{width}x{height}.jpg"
+                },
+                "logo": {
+                    "large": "https://static-cdn.jtvnw.net/ttv-logoart/Dota%202-240x144.jpg",
+                    "medium": "https://static-cdn.jtvnw.net/ttv-logoart/Dota%202-120x72.jpg",
+                    "small": "https://static-cdn.jtvnw.net/ttv-logoart/Dota%202-60x36.jpg",
+                    "template": "https://static-cdn.jtvnw.net/ttv-logoart/Dota%202-{width}x{height}.jpg"
+                },
+                "_links": {},
+                "localized_name": "Dota 2",
+                "locale": "pt-br"
+            },
+            "viewers": 19863,
+            "channels": 367
+        },
+        {
+            "game": {
+                "name": "Counter-Strike: Global Offensive",
+                "popularity": 18336,
+                "_id": 32399,
+                "giantbomb_id": 36113,
+                "box": {
+                    "large": "https://static-cdn.jtvnw.net/ttv-boxart/Counter-Strike:%20Global%20Offensive-272x380.jpg",
+                    "medium": "https://static-cdn.jtvnw.net/ttv-boxart/Counter-Strike:%20Global%20Offensive-136x190.jpg",
+                    "small": "https://static-cdn.jtvnw.net/ttv-boxart/Counter-Strike:%20Global%20Offensive-52x72.jpg",
+                    "template": "https://static-cdn.jtvnw.net/ttv-boxart/Counter-Strike:%20Global%20Offensive-{width}x{height}.jpg"
+                },
+                "logo": {
+                    "large": "https://static-cdn.jtvnw.net/ttv-logoart/Counter-Strike:%20Global%20Offensive-240x144.jpg",
+                    "medium": "https://static-cdn.jtvnw.net/ttv-logoart/Counter-Strike:%20Global%20Offensive-120x72.jpg",
+                    "small": "https://static-cdn.jtvnw.net/ttv-logoart/Counter-Strike:%20Global%20Offensive-60x36.jpg",
+                    "template": "https://static-cdn.jtvnw.net/ttv-logoart/Counter-Strike:%20Global%20Offensive-{width}x{height}.jpg"
+                },
+                "_links": {},
+                "localized_name": "Counter-Strike: Global Offensive",
+                "locale": "pt-br"
+            },
+            "viewers": 18698,
+            "channels": 1020
+        },
+        {
+            "game": {
+                "name": "Overwatch",
+                "popularity": 15464,
+                "_id": 488552,
+                "giantbomb_id": 48190,
+                "box": {
+                    "large": "https://static-cdn.jtvnw.net/ttv-boxart/Overwatch-272x380.jpg",
+                    "medium": "https://static-cdn.jtvnw.net/ttv-boxart/Overwatch-136x190.jpg",
+                    "small": "https://static-cdn.jtvnw.net/ttv-boxart/Overwatch-52x72.jpg",
+                    "template": "https://static-cdn.jtvnw.net/ttv-boxart/Overwatch-{width}x{height}.jpg"
+                },
+                "logo": {
+                    "large": "https://static-cdn.jtvnw.net/ttv-logoart/Overwatch-240x144.jpg",
+                    "medium": "https://static-cdn.jtvnw.net/ttv-logoart/Overwatch-120x72.jpg",
+                    "small": "https://static-cdn.jtvnw.net/ttv-logoart/Overwatch-60x36.jpg",
+                    "template": "https://static-cdn.jtvnw.net/ttv-logoart/Overwatch-{width}x{height}.jpg"
+                },
+                "_links": {},
+                "localized_name": "Overwatch",
+                "locale": "pt-br"
+            },
+            "viewers": 15676,
+            "channels": 1423
+        },
+        {
+            "game": {
+                "name": "Dark and Light",
+                "popularity": 15480,
+                "_id": 8511,
+                "giantbomb_id": 9285,
+                "box": {
+                    "large": "https://static-cdn.jtvnw.net/ttv-boxart/Dark%20and%20Light-272x380.jpg",
+                    "medium": "https://static-cdn.jtvnw.net/ttv-boxart/Dark%20and%20Light-136x190.jpg",
+                    "small": "https://static-cdn.jtvnw.net/ttv-boxart/Dark%20and%20Light-52x72.jpg",
+                    "template": "https://static-cdn.jtvnw.net/ttv-boxart/Dark%20and%20Light-{width}x{height}.jpg"
+                },
+                "logo": {
+                    "large": "https://static-cdn.jtvnw.net/ttv-logoart/Dark%20and%20Light-240x144.jpg",
+                    "medium": "https://static-cdn.jtvnw.net/ttv-logoart/Dark%20and%20Light-120x72.jpg",
+                    "small": "https://static-cdn.jtvnw.net/ttv-logoart/Dark%20and%20Light-60x36.jpg",
+                    "template": "https://static-cdn.jtvnw.net/ttv-logoart/Dark%20and%20Light-{width}x{height}.jpg"
+                },
+                "_links": {},
+                "localized_name": "Dark and Light",
+                "locale": "pt-br"
+            },
+            "viewers": 15632,
+            "channels": 136
+        },
+        {
+            "game": {
+                "name": "Anime",
+                "popularity": 10992,
+                "_id": 498041,
+                "giantbomb_id": 0,
+                "box": {
+                    "large": "https://static-cdn.jtvnw.net/ttv-boxart/Anime-272x380.jpg",
+                    "medium": "https://static-cdn.jtvnw.net/ttv-boxart/Anime-136x190.jpg",
+                    "small": "https://static-cdn.jtvnw.net/ttv-boxart/Anime-52x72.jpg",
+                    "template": "https://static-cdn.jtvnw.net/ttv-boxart/Anime-{width}x{height}.jpg"
+                },
+                "logo": {
+                    "large": "https://static-cdn.jtvnw.net/ttv-logoart/Anime-240x144.jpg",
+                    "medium": "https://static-cdn.jtvnw.net/ttv-logoart/Anime-120x72.jpg",
+                    "small": "https://static-cdn.jtvnw.net/ttv-logoart/Anime-60x36.jpg",
+                    "template": "https://static-cdn.jtvnw.net/ttv-logoart/Anime-{width}x{height}.jpg"
+                },
+                "_links": {},
+                "localized_name": "Anime",
+                "locale": "pt-br"
+            },
+            "viewers": 11251,
+            "channels": 43
+        },
+        {
+            "game": {
+                "name": "World of Warcraft",
+                "popularity": 10271,
+                "_id": 18122,
+                "giantbomb_id": 19783,
+                "box": {
+                    "large": "https://static-cdn.jtvnw.net/ttv-boxart/World%20of%20Warcraft-272x380.jpg",
+                    "medium": "https://static-cdn.jtvnw.net/ttv-boxart/World%20of%20Warcraft-136x190.jpg",
+                    "small": "https://static-cdn.jtvnw.net/ttv-boxart/World%20of%20Warcraft-52x72.jpg",
+                    "template": "https://static-cdn.jtvnw.net/ttv-boxart/World%20of%20Warcraft-{width}x{height}.jpg"
+                },
+                "logo": {
+                    "large": "https://static-cdn.jtvnw.net/ttv-logoart/World%20of%20Warcraft-240x144.jpg",
+                    "medium": "https://static-cdn.jtvnw.net/ttv-logoart/World%20of%20Warcraft-120x72.jpg",
+                    "small": "https://static-cdn.jtvnw.net/ttv-logoart/World%20of%20Warcraft-60x36.jpg",
+                    "template": "https://static-cdn.jtvnw.net/ttv-logoart/World%20of%20Warcraft-{width}x{height}.jpg"
+                },
+                "_links": {},
+                "localized_name": "World of Warcraft",
+                "locale": "pt-br"
+            },
+            "viewers": 10209,
+            "channels": 920
+        },
+        {
+            "game": {
+                "name": "Fortnite",
+                "popularity": 7902,
+                "_id": 33214,
+                "giantbomb_id": 37030,
+                "box": {
+                    "large": "https://static-cdn.jtvnw.net/ttv-boxart/Fortnite-272x380.jpg",
+                    "medium": "https://static-cdn.jtvnw.net/ttv-boxart/Fortnite-136x190.jpg",
+                    "small": "https://static-cdn.jtvnw.net/ttv-boxart/Fortnite-52x72.jpg",
+                    "template": "https://static-cdn.jtvnw.net/ttv-boxart/Fortnite-{width}x{height}.jpg"
+                },
+                "logo": {
+                    "large": "https://static-cdn.jtvnw.net/ttv-logoart/Fortnite-240x144.jpg",
+                    "medium": "https://static-cdn.jtvnw.net/ttv-logoart/Fortnite-120x72.jpg",
+                    "small": "https://static-cdn.jtvnw.net/ttv-logoart/Fortnite-60x36.jpg",
+                    "template": "https://static-cdn.jtvnw.net/ttv-logoart/Fortnite-{width}x{height}.jpg"
+                },
+                "_links": {},
+                "localized_name": "Fortnite",
+                "locale": "pt-br"
+            },
+            "viewers": 7936,
+            "channels": 540
+        },
+        {
+            "game": {
+                "name": "Foxhole",
+                "popularity": 7539,
+                "_id": 493388,
+                "giantbomb_id": 54997,
+                "box": {
+                    "large": "https://static-cdn.jtvnw.net/ttv-boxart/Foxhole-272x380.jpg",
+                    "medium": "https://static-cdn.jtvnw.net/ttv-boxart/Foxhole-136x190.jpg",
+                    "small": "https://static-cdn.jtvnw.net/ttv-boxart/Foxhole-52x72.jpg",
+                    "template": "https://static-cdn.jtvnw.net/ttv-boxart/Foxhole-{width}x{height}.jpg"
+                },
+                "logo": {
+                    "large": "https://static-cdn.jtvnw.net/ttv-logoart/Foxhole-240x144.jpg",
+                    "medium": "https://static-cdn.jtvnw.net/ttv-logoart/Foxhole-120x72.jpg",
+                    "small": "https://static-cdn.jtvnw.net/ttv-logoart/Foxhole-60x36.jpg",
+                    "template": "https://static-cdn.jtvnw.net/ttv-logoart/Foxhole-{width}x{height}.jpg"
+                },
+                "_links": {},
+                "localized_name": "Foxhole",
+                "locale": "pt-br"
+            },
+            "viewers": 7352,
+            "channels": 37
+        },
+        {
+            "game": {
+                "name": "Call of Duty: Infinite Warfare",
+                "popularity": 6821,
+                "_id": 491437,
+                "giantbomb_id": 52633,
+                "box": {
+                    "large": "https://static-cdn.jtvnw.net/ttv-boxart/Call%20of%20Duty:%20Infinite%20Warfare-272x380.jpg",
+                    "medium": "https://static-cdn.jtvnw.net/ttv-boxart/Call%20of%20Duty:%20Infinite%20Warfare-136x190.jpg",
+                    "small": "https://static-cdn.jtvnw.net/ttv-boxart/Call%20of%20Duty:%20Infinite%20Warfare-52x72.jpg",
+                    "template": "https://static-cdn.jtvnw.net/ttv-boxart/Call%20of%20Duty:%20Infinite%20Warfare-{width}x{height}.jpg"
+                },
+                "logo": {
+                    "large": "https://static-cdn.jtvnw.net/ttv-logoart/Call%20of%20Duty:%20Infinite%20Warfare-240x144.jpg",
+                    "medium": "https://static-cdn.jtvnw.net/ttv-logoart/Call%20of%20Duty:%20Infinite%20Warfare-120x72.jpg",
+                    "small": "https://static-cdn.jtvnw.net/ttv-logoart/Call%20of%20Duty:%20Infinite%20Warfare-60x36.jpg",
+                    "template": "https://static-cdn.jtvnw.net/ttv-logoart/Call%20of%20Duty:%20Infinite%20Warfare-{width}x{height}.jpg"
+                },
+                "_links": {},
+                "localized_name": "Call of Duty: Infinite Warfare",
+                "locale": "pt-br"
+            },
+            "viewers": 6925,
+            "channels": 256
+        },
+        {
+            "game": {
+                "name": "Tom Clancy's Rainbow Six: Siege",
+                "popularity": 6952,
+                "_id": 460630,
+                "giantbomb_id": 46562,
+                "box": {
+                    "large": "https://static-cdn.jtvnw.net/ttv-boxart/Tom%20Clancy%27s%20Rainbow%20Six:%20Siege-272x380.jpg",
+                    "medium": "https://static-cdn.jtvnw.net/ttv-boxart/Tom%20Clancy%27s%20Rainbow%20Six:%20Siege-136x190.jpg",
+                    "small": "https://static-cdn.jtvnw.net/ttv-boxart/Tom%20Clancy%27s%20Rainbow%20Six:%20Siege-52x72.jpg",
+                    "template": "https://static-cdn.jtvnw.net/ttv-boxart/Tom%20Clancy%27s%20Rainbow%20Six:%20Siege-{width}x{height}.jpg"
+                },
+                "logo": {
+                    "large": "https://static-cdn.jtvnw.net/ttv-logoart/Tom%20Clancy%27s%20Rainbow%20Six:%20Siege-240x144.jpg",
+                    "medium": "https://static-cdn.jtvnw.net/ttv-logoart/Tom%20Clancy%27s%20Rainbow%20Six:%20Siege-120x72.jpg",
+                    "small": "https://static-cdn.jtvnw.net/ttv-logoart/Tom%20Clancy%27s%20Rainbow%20Six:%20Siege-60x36.jpg",
+                    "template": "https://static-cdn.jtvnw.net/ttv-logoart/Tom%20Clancy%27s%20Rainbow%20Six:%20Siege-{width}x{height}.jpg"
+                },
+                "_links": {},
+                "localized_name": "Tom Clancy's Rainbow Six: Siege",
+                "locale": "pt-br"
+            },
+            "viewers": 6839,
+            "channels": 792
+        },
+        {
+            "game": {
+                "name": "H1Z1: King of the Kill",
+                "popularity": 6575,
+                "_id": 417892,
+                "giantbomb_id": 52692,
+                "box": {
+                    "large": "https://static-cdn.jtvnw.net/ttv-boxart/H1Z1:%20King%20of%20the%20Kill-272x380.jpg",
+                    "medium": "https://static-cdn.jtvnw.net/ttv-boxart/H1Z1:%20King%20of%20the%20Kill-136x190.jpg",
+                    "small": "https://static-cdn.jtvnw.net/ttv-boxart/H1Z1:%20King%20of%20the%20Kill-52x72.jpg",
+                    "template": "https://static-cdn.jtvnw.net/ttv-boxart/H1Z1:%20King%20of%20the%20Kill-{width}x{height}.jpg"
+                },
+                "logo": {
+                    "large": "https://static-cdn.jtvnw.net/ttv-logoart/H1Z1:%20King%20of%20the%20Kill-240x144.jpg",
+                    "medium": "https://static-cdn.jtvnw.net/ttv-logoart/H1Z1:%20King%20of%20the%20Kill-120x72.jpg",
+                    "small": "https://static-cdn.jtvnw.net/ttv-logoart/H1Z1:%20King%20of%20the%20Kill-60x36.jpg",
+                    "template": "https://static-cdn.jtvnw.net/ttv-logoart/H1Z1:%20King%20of%20the%20Kill-{width}x{height}.jpg"
+                },
+                "_links": {},
+                "localized_name": "H1Z1: King of the Kill",
+                "locale": "pt-br"
+            },
+            "viewers": 6547,
+            "channels": 392
+        },
+        {
+            "game": {
+                "name": "Poker",
+                "popularity": 5781,
+                "_id": 488190,
+                "giantbomb_id": 0,
+                "box": {
+                    "large": "https://static-cdn.jtvnw.net/ttv-boxart/Poker-272x380.jpg",
+                    "medium": "https://static-cdn.jtvnw.net/ttv-boxart/Poker-136x190.jpg",
+                    "small": "https://static-cdn.jtvnw.net/ttv-boxart/Poker-52x72.jpg",
+                    "template": "https://static-cdn.jtvnw.net/ttv-boxart/Poker-{width}x{height}.jpg"
+                },
+                "logo": {
+                    "large": "https://static-cdn.jtvnw.net/ttv-logoart/Poker-240x144.jpg",
+                    "medium": "https://static-cdn.jtvnw.net/ttv-logoart/Poker-120x72.jpg",
+                    "small": "https://static-cdn.jtvnw.net/ttv-logoart/Poker-60x36.jpg",
+                    "template": "https://static-cdn.jtvnw.net/ttv-logoart/Poker-{width}x{height}.jpg"
+                },
+                "_links": {},
+                "localized_name": "Poker",
+                "locale": "pt-br"
+            },
+            "viewers": 5760,
+            "channels": 43
+        },
+        {
+            "game": {
+                "name": "Heroes of the Storm",
+                "popularity": 5483,
+                "_id": 32959,
+                "giantbomb_id": 36739,
+                "box": {
+                    "large": "https://static-cdn.jtvnw.net/ttv-boxart/Heroes%20of%20the%20Storm-272x380.jpg",
+                    "medium": "https://static-cdn.jtvnw.net/ttv-boxart/Heroes%20of%20the%20Storm-136x190.jpg",
+                    "small": "https://static-cdn.jtvnw.net/ttv-boxart/Heroes%20of%20the%20Storm-52x72.jpg",
+                    "template": "https://static-cdn.jtvnw.net/ttv-boxart/Heroes%20of%20the%20Storm-{width}x{height}.jpg"
+                },
+                "logo": {
+                    "large": "https://static-cdn.jtvnw.net/ttv-logoart/Heroes%20of%20the%20Storm-240x144.jpg",
+                    "medium": "https://static-cdn.jtvnw.net/ttv-logoart/Heroes%20of%20the%20Storm-120x72.jpg",
+                    "small": "https://static-cdn.jtvnw.net/ttv-logoart/Heroes%20of%20the%20Storm-60x36.jpg",
+                    "template": "https://static-cdn.jtvnw.net/ttv-logoart/Heroes%20of%20the%20Storm-{width}x{height}.jpg"
+                },
+                "_links": {},
+                "localized_name": "Heroes of the Storm",
+                "locale": "pt-br"
+            },
+            "viewers": 5012,
+            "channels": 180
+        },
+        {
+            "game": {
+                "name": "Creative",
+                "popularity": 4863,
+                "_id": 488191,
+                "giantbomb_id": 0,
+                "box": {
+                    "large": "https://static-cdn.jtvnw.net/ttv-boxart/Creative-272x380.jpg",
+                    "medium": "https://static-cdn.jtvnw.net/ttv-boxart/Creative-136x190.jpg",
+                    "small": "https://static-cdn.jtvnw.net/ttv-boxart/Creative-52x72.jpg",
+                    "template": "https://static-cdn.jtvnw.net/ttv-boxart/Creative-{width}x{height}.jpg"
+                },
+                "logo": {
+                    "large": "https://static-cdn.jtvnw.net/ttv-logoart/Creative-240x144.jpg",
+                    "medium": "https://static-cdn.jtvnw.net/ttv-logoart/Creative-120x72.jpg",
+                    "small": "https://static-cdn.jtvnw.net/ttv-logoart/Creative-60x36.jpg",
+                    "template": "https://static-cdn.jtvnw.net/ttv-logoart/Creative-{width}x{height}.jpg"
+                },
+                "_links": {},
+                "localized_name": "Creative",
+                "locale": "pt-br"
+            },
+            "viewers": 4805,
+            "channels": 447
+        },
+        {
+            "game": {
+                "name": "RuneScape",
+                "popularity": 4649,
+                "_id": 2083,
+                "giantbomb_id": 2268,
+                "box": {
+                    "large": "https://static-cdn.jtvnw.net/ttv-boxart/RuneScape-272x380.jpg",
+                    "medium": "https://static-cdn.jtvnw.net/ttv-boxart/RuneScape-136x190.jpg",
+                    "small": "https://static-cdn.jtvnw.net/ttv-boxart/RuneScape-52x72.jpg",
+                    "template": "https://static-cdn.jtvnw.net/ttv-boxart/RuneScape-{width}x{height}.jpg"
+                },
+                "logo": {
+                    "large": "https://static-cdn.jtvnw.net/ttv-logoart/RuneScape-240x144.jpg",
+                    "medium": "https://static-cdn.jtvnw.net/ttv-logoart/RuneScape-120x72.jpg",
+                    "small": "https://static-cdn.jtvnw.net/ttv-logoart/RuneScape-60x36.jpg",
+                    "template": "https://static-cdn.jtvnw.net/ttv-logoart/RuneScape-{width}x{height}.jpg"
+                },
+                "_links": {},
+                "localized_name": "RuneScape",
+                "locale": "pt-br"
+            },
+            "viewers": 4657,
+            "channels": 165
+        },
+        {
+            "game": {
+                "name": "The Elder Scrolls: Legends",
+                "popularity": 4397,
+                "_id": 490349,
+                "giantbomb_id": 49955,
+                "box": {
+                    "large": "https://static-cdn.jtvnw.net/ttv-boxart/The%20Elder%20Scrolls:%20Legends-272x380.jpg",
+                    "medium": "https://static-cdn.jtvnw.net/ttv-boxart/The%20Elder%20Scrolls:%20Legends-136x190.jpg",
+                    "small": "https://static-cdn.jtvnw.net/ttv-boxart/The%20Elder%20Scrolls:%20Legends-52x72.jpg",
+                    "template": "https://static-cdn.jtvnw.net/ttv-boxart/The%20Elder%20Scrolls:%20Legends-{width}x{height}.jpg"
+                },
+                "logo": {
+                    "large": "https://static-cdn.jtvnw.net/ttv-logoart/The%20Elder%20Scrolls:%20Legends-240x144.jpg",
+                    "medium": "https://static-cdn.jtvnw.net/ttv-logoart/The%20Elder%20Scrolls:%20Legends-120x72.jpg",
+                    "small": "https://static-cdn.jtvnw.net/ttv-logoart/The%20Elder%20Scrolls:%20Legends-60x36.jpg",
+                    "template": "https://static-cdn.jtvnw.net/ttv-logoart/The%20Elder%20Scrolls:%20Legends-{width}x{height}.jpg"
+                },
+                "_links": {},
+                "localized_name": "The Elder Scrolls: Legends",
+                "locale": "pt-br"
+            },
+            "viewers": 4370,
+            "channels": 40
+        },
+        {
+            "game": {
+                "name": "Minecraft",
+                "popularity": 4355,
+                "_id": 27471,
+                "giantbomb_id": 30475,
+                "box": {
+                    "large": "https://static-cdn.jtvnw.net/ttv-boxart/Minecraft-272x380.jpg",
+                    "medium": "https://static-cdn.jtvnw.net/ttv-boxart/Minecraft-136x190.jpg",
+                    "small": "https://static-cdn.jtvnw.net/ttv-boxart/Minecraft-52x72.jpg",
+                    "template": "https://static-cdn.jtvnw.net/ttv-boxart/Minecraft-{width}x{height}.jpg"
+                },
+                "logo": {
+                    "large": "https://static-cdn.jtvnw.net/ttv-logoart/Minecraft-240x144.jpg",
+                    "medium": "https://static-cdn.jtvnw.net/ttv-logoart/Minecraft-120x72.jpg",
+                    "small": "https://static-cdn.jtvnw.net/ttv-logoart/Minecraft-60x36.jpg",
+                    "template": "https://static-cdn.jtvnw.net/ttv-logoart/Minecraft-{width}x{height}.jpg"
+                },
+                "_links": {},
+                "localized_name": "Minecraft",
+                "locale": "pt-br"
+            },
+            "viewers": 4287,
+            "channels": 446
+        },
+        {
+            "game": {
+                "name": "Dead by Daylight",
+                "popularity": 4155,
+                "_id": 491487,
+                "giantbomb_id": 52693,
+                "box": {
+                    "large": "https://static-cdn.jtvnw.net/ttv-boxart/Dead%20by%20Daylight-272x380.jpg",
+                    "medium": "https://static-cdn.jtvnw.net/ttv-boxart/Dead%20by%20Daylight-136x190.jpg",
+                    "small": "https://static-cdn.jtvnw.net/ttv-boxart/Dead%20by%20Daylight-52x72.jpg",
+                    "template": "https://static-cdn.jtvnw.net/ttv-boxart/Dead%20by%20Daylight-{width}x{height}.jpg"
+                },
+                "logo": {
+                    "large": "https://static-cdn.jtvnw.net/ttv-logoart/Dead%20by%20Daylight-240x144.jpg",
+                    "medium": "https://static-cdn.jtvnw.net/ttv-logoart/Dead%20by%20Daylight-120x72.jpg",
+                    "small": "https://static-cdn.jtvnw.net/ttv-logoart/Dead%20by%20Daylight-60x36.jpg",
+                    "template": "https://static-cdn.jtvnw.net/ttv-logoart/Dead%20by%20Daylight-{width}x{height}.jpg"
+                },
+                "_links": {},
+                "localized_name": "Dead by Daylight",
+                "locale": "pt-br"
+            },
+            "viewers": 4269,
+            "channels": 255
+        },
+        {
+            "game": {
+                "name": "Smite",
+                "popularity": 4123,
+                "_id": 32507,
+                "giantbomb_id": 36241,
+                "box": {
+                    "large": "https://static-cdn.jtvnw.net/ttv-boxart/Smite-272x380.jpg",
+                    "medium": "https://static-cdn.jtvnw.net/ttv-boxart/Smite-136x190.jpg",
+                    "small": "https://static-cdn.jtvnw.net/ttv-boxart/Smite-52x72.jpg",
+                    "template": "https://static-cdn.jtvnw.net/ttv-boxart/Smite-{width}x{height}.jpg"
+                },
+                "logo": {
+                    "large": "https://static-cdn.jtvnw.net/ttv-logoart/Smite-240x144.jpg",
+                    "medium": "https://static-cdn.jtvnw.net/ttv-logoart/Smite-120x72.jpg",
+                    "small": "https://static-cdn.jtvnw.net/ttv-logoart/Smite-60x36.jpg",
+                    "template": "https://static-cdn.jtvnw.net/ttv-logoart/Smite-{width}x{height}.jpg"
+                },
+                "_links": {},
+                "localized_name": "Smite",
+                "locale": "pt-br"
+            },
+            "viewers": 4148,
+            "channels": 236
+        },
+        {
+            "game": {
+                "name": "Tekken 7",
+                "popularity": 4381,
+                "_id": 461067,
+                "giantbomb_id": 47011,
+                "box": {
+                    "large": "https://static-cdn.jtvnw.net/ttv-boxart/Tekken%207-272x380.jpg",
+                    "medium": "https://static-cdn.jtvnw.net/ttv-boxart/Tekken%207-136x190.jpg",
+                    "small": "https://static-cdn.jtvnw.net/ttv-boxart/Tekken%207-52x72.jpg",
+                    "template": "https://static-cdn.jtvnw.net/ttv-boxart/Tekken%207-{width}x{height}.jpg"
+                },
+                "logo": {
+                    "large": "https://static-cdn.jtvnw.net/ttv-logoart/Tekken%207-240x144.jpg",
+                    "medium": "https://static-cdn.jtvnw.net/ttv-logoart/Tekken%207-120x72.jpg",
+                    "small": "https://static-cdn.jtvnw.net/ttv-logoart/Tekken%207-60x36.jpg",
+                    "template": "https://static-cdn.jtvnw.net/ttv-logoart/Tekken%207-{width}x{height}.jpg"
+                },
+                "_links": {},
+                "localized_name": "Tekken 7",
+                "locale": "pt-br"
+            },
+            "viewers": 4104,
+            "channels": 53
+        },
+        {
+            "game": {
+                "name": "Diablo III: Reaper of Souls",
+                "popularity": 3768,
+                "_id": 313558,
+                "giantbomb_id": 43649,
+                "box": {
+                    "large": "https://static-cdn.jtvnw.net/ttv-boxart/Diablo%20III:%20Reaper%20of%20Souls-272x380.jpg",
+                    "medium": "https://static-cdn.jtvnw.net/ttv-boxart/Diablo%20III:%20Reaper%20of%20Souls-136x190.jpg",
+                    "small": "https://static-cdn.jtvnw.net/ttv-boxart/Diablo%20III:%20Reaper%20of%20Souls-52x72.jpg",
+                    "template": "https://static-cdn.jtvnw.net/ttv-boxart/Diablo%20III:%20Reaper%20of%20Souls-{width}x{height}.jpg"
+                },
+                "logo": {
+                    "large": "https://static-cdn.jtvnw.net/ttv-logoart/Diablo%20III:%20Reaper%20of%20Souls-240x144.jpg",
+                    "medium": "https://static-cdn.jtvnw.net/ttv-logoart/Diablo%20III:%20Reaper%20of%20Souls-120x72.jpg",
+                    "small": "https://static-cdn.jtvnw.net/ttv-logoart/Diablo%20III:%20Reaper%20of%20Souls-60x36.jpg",
+                    "template": "https://static-cdn.jtvnw.net/ttv-logoart/Diablo%20III:%20Reaper%20of%20Souls-{width}x{height}.jpg"
+                },
+                "_links": {},
+                "localized_name": "Diablo III: Reaper of Souls",
+                "locale": "pt-br"
+            },
+            "viewers": 3757,
+            "channels": 231
+        },
+        {
+            "game": {
+                "name": "Destiny",
+                "popularity": 3413,
+                "_id": 280721,
+                "giantbomb_id": 36067,
+                "box": {
+                    "large": "https://static-cdn.jtvnw.net/ttv-boxart/Destiny-272x380.jpg",
+                    "medium": "https://static-cdn.jtvnw.net/ttv-boxart/Destiny-136x190.jpg",
+                    "small": "https://static-cdn.jtvnw.net/ttv-boxart/Destiny-52x72.jpg",
+                    "template": "https://static-cdn.jtvnw.net/ttv-boxart/Destiny-{width}x{height}.jpg"
+                },
+                "logo": {
+                    "large": "https://static-cdn.jtvnw.net/ttv-logoart/Destiny-240x144.jpg",
+                    "medium": "https://static-cdn.jtvnw.net/ttv-logoart/Destiny-120x72.jpg",
+                    "small": "https://static-cdn.jtvnw.net/ttv-logoart/Destiny-60x36.jpg",
+                    "template": "https://static-cdn.jtvnw.net/ttv-logoart/Destiny-{width}x{height}.jpg"
+                },
+                "_links": {},
+                "localized_name": "Destiny",
+                "locale": "pt-br"
+            },
+            "viewers": 3446,
+            "channels": 971
+        },
+        {
+            "game": {
+                "name": "Path of Exile",
+                "popularity": 3480,
+                "_id": 29307,
+                "giantbomb_id": 32562,
+                "box": {
+                    "large": "https://static-cdn.jtvnw.net/ttv-boxart/Path%20of%20Exile-272x380.jpg",
+                    "medium": "https://static-cdn.jtvnw.net/ttv-boxart/Path%20of%20Exile-136x190.jpg",
+                    "small": "https://static-cdn.jtvnw.net/ttv-boxart/Path%20of%20Exile-52x72.jpg",
+                    "template": "https://static-cdn.jtvnw.net/ttv-boxart/Path%20of%20Exile-{width}x{height}.jpg"
+                },
+                "logo": {
+                    "large": "https://static-cdn.jtvnw.net/ttv-logoart/Path%20of%20Exile-240x144.jpg",
+                    "medium": "https://static-cdn.jtvnw.net/ttv-logoart/Path%20of%20Exile-120x72.jpg",
+                    "small": "https://static-cdn.jtvnw.net/ttv-logoart/Path%20of%20Exile-60x36.jpg",
+                    "template": "https://static-cdn.jtvnw.net/ttv-logoart/Path%20of%20Exile-{width}x{height}.jpg"
+                },
+                "_links": {},
+                "localized_name": "Path of Exile",
+                "locale": "pt-br"
+            },
+            "viewers": 3366,
+            "channels": 73
+        },
+        {
+            "game": {
+                "name": "StarCraft",
+                "popularity": 3233,
+                "_id": 11989,
+                "giantbomb_id": 13062,
+                "box": {
+                    "large": "https://static-cdn.jtvnw.net/ttv-boxart/StarCraft-272x380.jpg",
+                    "medium": "https://static-cdn.jtvnw.net/ttv-boxart/StarCraft-136x190.jpg",
+                    "small": "https://static-cdn.jtvnw.net/ttv-boxart/StarCraft-52x72.jpg",
+                    "template": "https://static-cdn.jtvnw.net/ttv-boxart/StarCraft-{width}x{height}.jpg"
+                },
+                "logo": {
+                    "large": "https://static-cdn.jtvnw.net/ttv-logoart/StarCraft-240x144.jpg",
+                    "medium": "https://static-cdn.jtvnw.net/ttv-logoart/StarCraft-120x72.jpg",
+                    "small": "https://static-cdn.jtvnw.net/ttv-logoart/StarCraft-60x36.jpg",
+                    "template": "https://static-cdn.jtvnw.net/ttv-logoart/StarCraft-{width}x{height}.jpg"
+                },
+                "_links": {},
+                "localized_name": "StarCraft",
+                "locale": "pt-br"
+            },
+            "viewers": 3354,
+            "channels": 17
+        },
+        {
+            "game": {
+                "name": "Rocket League",
+                "popularity": 3230,
+                "_id": 30921,
+                "giantbomb_id": 34407,
+                "box": {
+                    "large": "https://static-cdn.jtvnw.net/ttv-boxart/Rocket%20League-272x380.jpg",
+                    "medium": "https://static-cdn.jtvnw.net/ttv-boxart/Rocket%20League-136x190.jpg",
+                    "small": "https://static-cdn.jtvnw.net/ttv-boxart/Rocket%20League-52x72.jpg",
+                    "template": "https://static-cdn.jtvnw.net/ttv-boxart/Rocket%20League-{width}x{height}.jpg"
+                },
+                "logo": {
+                    "large": "https://static-cdn.jtvnw.net/ttv-logoart/Rocket%20League-240x144.jpg",
+                    "medium": "https://static-cdn.jtvnw.net/ttv-logoart/Rocket%20League-120x72.jpg",
+                    "small": "https://static-cdn.jtvnw.net/ttv-logoart/Rocket%20League-60x36.jpg",
+                    "template": "https://static-cdn.jtvnw.net/ttv-logoart/Rocket%20League-{width}x{height}.jpg"
+                },
+                "_links": {},
+                "localized_name": "Rocket League",
+                "locale": "pt-br"
+            },
+            "viewers": 3276,
+            "channels": 292
+        },
+        {
+            "game": {
+                "name": "Black Desert Online",
+                "popularity": 3199,
+                "_id": 386821,
+                "giantbomb_id": 44025,
+                "box": {
+                    "large": "https://static-cdn.jtvnw.net/ttv-boxart/Black%20Desert%20Online-272x380.jpg",
+                    "medium": "https://static-cdn.jtvnw.net/ttv-boxart/Black%20Desert%20Online-136x190.jpg",
+                    "small": "https://static-cdn.jtvnw.net/ttv-boxart/Black%20Desert%20Online-52x72.jpg",
+                    "template": "https://static-cdn.jtvnw.net/ttv-boxart/Black%20Desert%20Online-{width}x{height}.jpg"
+                },
+                "logo": {
+                    "large": "https://static-cdn.jtvnw.net/ttv-logoart/Black%20Desert%20Online-240x144.jpg",
+                    "medium": "https://static-cdn.jtvnw.net/ttv-logoart/Black%20Desert%20Online-120x72.jpg",
+                    "small": "https://static-cdn.jtvnw.net/ttv-logoart/Black%20Desert%20Online-60x36.jpg",
+                    "template": "https://static-cdn.jtvnw.net/ttv-logoart/Black%20Desert%20Online-{width}x{height}.jpg"
+                },
+                "_links": {},
+                "localized_name": "Black Desert Online",
+                "locale": "pt-br"
+            },
+            "viewers": 3197,
+            "channels": 180
+        },
+        {
+            "game": {
+                "name": "Dungeons & Dragons",
+                "popularity": 2578,
+                "_id": 31621,
+                "giantbomb_id": 35234,
+                "box": {
+                    "large": "https://static-cdn.jtvnw.net/ttv-boxart/Dungeons%20&%20Dragons-272x380.jpg",
+                    "medium": "https://static-cdn.jtvnw.net/ttv-boxart/Dungeons%20&%20Dragons-136x190.jpg",
+                    "small": "https://static-cdn.jtvnw.net/ttv-boxart/Dungeons%20&%20Dragons-52x72.jpg",
+                    "template": "https://static-cdn.jtvnw.net/ttv-boxart/Dungeons%20&%20Dragons-{width}x{height}.jpg"
+                },
+                "logo": {
+                    "large": "https://static-cdn.jtvnw.net/ttv-logoart/Dungeons%20&%20Dragons-240x144.jpg",
+                    "medium": "https://static-cdn.jtvnw.net/ttv-logoart/Dungeons%20&%20Dragons-120x72.jpg",
+                    "small": "https://static-cdn.jtvnw.net/ttv-logoart/Dungeons%20&%20Dragons-60x36.jpg",
+                    "template": "https://static-cdn.jtvnw.net/ttv-logoart/Dungeons%20&%20Dragons-{width}x{height}.jpg"
+                },
+                "_links": {},
+                "localized_name": "Dungeons & Dragons",
+                "locale": "pt-br"
+            },
+            "viewers": 2614,
+            "channels": 69
+        },
+        {
+            "game": {
+                "name": "The Binding of Isaac: Afterbirth",
+                "popularity": 2564,
+                "_id": 491080,
+                "giantbomb_id": 0,
+                "box": {
+                    "large": "https://static-cdn.jtvnw.net/ttv-boxart/The%20Binding%20of%20Isaac:%20Afterbirth-272x380.jpg",
+                    "medium": "https://static-cdn.jtvnw.net/ttv-boxart/The%20Binding%20of%20Isaac:%20Afterbirth-136x190.jpg",
+                    "small": "https://static-cdn.jtvnw.net/ttv-boxart/The%20Binding%20of%20Isaac:%20Afterbirth-52x72.jpg",
+                    "template": "https://static-cdn.jtvnw.net/ttv-boxart/The%20Binding%20of%20Isaac:%20Afterbirth-{width}x{height}.jpg"
+                },
+                "logo": {
+                    "large": "https://static-cdn.jtvnw.net/ttv-logoart/The%20Binding%20of%20Isaac:%20Afterbirth-240x144.jpg",
+                    "medium": "https://static-cdn.jtvnw.net/ttv-logoart/The%20Binding%20of%20Isaac:%20Afterbirth-120x72.jpg",
+                    "small": "https://static-cdn.jtvnw.net/ttv-logoart/The%20Binding%20of%20Isaac:%20Afterbirth-60x36.jpg",
+                    "template": "https://static-cdn.jtvnw.net/ttv-logoart/The%20Binding%20of%20Isaac:%20Afterbirth-{width}x{height}.jpg"
+                },
+                "_links": {},
+                "localized_name": "The Binding of Isaac: Afterbirth",
+                "locale": "pt-br"
+            },
+            "viewers": 2550,
+            "channels": 29
+        },
+        {
+            "game": {
+                "name": "FINAL FANTASY XIV Online",
+                "popularity": 2389,
+                "_id": 24241,
+                "giantbomb_id": 26847,
+                "box": {
+                    "large": "https://static-cdn.jtvnw.net/ttv-boxart/FINAL%20FANTASY%20XIV%20Online-272x380.jpg",
+                    "medium": "https://static-cdn.jtvnw.net/ttv-boxart/FINAL%20FANTASY%20XIV%20Online-136x190.jpg",
+                    "small": "https://static-cdn.jtvnw.net/ttv-boxart/FINAL%20FANTASY%20XIV%20Online-52x72.jpg",
+                    "template": "https://static-cdn.jtvnw.net/ttv-boxart/FINAL%20FANTASY%20XIV%20Online-{width}x{height}.jpg"
+                },
+                "logo": {
+                    "large": "https://static-cdn.jtvnw.net/ttv-logoart/FINAL%20FANTASY%20XIV%20Online-240x144.jpg",
+                    "medium": "https://static-cdn.jtvnw.net/ttv-logoart/FINAL%20FANTASY%20XIV%20Online-120x72.jpg",
+                    "small": "https://static-cdn.jtvnw.net/ttv-logoart/FINAL%20FANTASY%20XIV%20Online-60x36.jpg",
+                    "template": "https://static-cdn.jtvnw.net/ttv-logoart/FINAL%20FANTASY%20XIV%20Online-{width}x{height}.jpg"
+                },
+                "_links": {},
+                "localized_name": "FINAL FANTASY XIV Online",
+                "locale": "pt-br"
+            },
+            "viewers": 2447,
+            "channels": 341
+        },
+        {
+            "game": {
+                "name": "Magic: The Gathering",
+                "popularity": 2249,
+                "_id": 2748,
+                "giantbomb_id": 3000,
+                "box": {
+                    "large": "https://static-cdn.jtvnw.net/ttv-boxart/Magic:%20The%20Gathering-272x380.jpg",
+                    "medium": "https://static-cdn.jtvnw.net/ttv-boxart/Magic:%20The%20Gathering-136x190.jpg",
+                    "small": "https://static-cdn.jtvnw.net/ttv-boxart/Magic:%20The%20Gathering-52x72.jpg",
+                    "template": "https://static-cdn.jtvnw.net/ttv-boxart/Magic:%20The%20Gathering-{width}x{height}.jpg"
+                },
+                "logo": {
+                    "large": "https://static-cdn.jtvnw.net/ttv-logoart/Magic:%20The%20Gathering-240x144.jpg",
+                    "medium": "https://static-cdn.jtvnw.net/ttv-logoart/Magic:%20The%20Gathering-120x72.jpg",
+                    "small": "https://static-cdn.jtvnw.net/ttv-logoart/Magic:%20The%20Gathering-60x36.jpg",
+                    "template": "https://static-cdn.jtvnw.net/ttv-logoart/Magic:%20The%20Gathering-{width}x{height}.jpg"
+                },
+                "_links": {},
+                "localized_name": "Magic: The Gathering",
+                "locale": "pt-br"
+            },
+            "viewers": 2343,
+            "channels": 35
+        },
+        {
+            "game": {
+                "name": "The Long Dark",
+                "popularity": 2042,
+                "_id": 418016,
+                "giantbomb_id": 44270,
+                "box": {
+                    "large": "https://static-cdn.jtvnw.net/ttv-boxart/The%20Long%20Dark-272x380.jpg",
+                    "medium": "https://static-cdn.jtvnw.net/ttv-boxart/The%20Long%20Dark-136x190.jpg",
+                    "small": "https://static-cdn.jtvnw.net/ttv-boxart/The%20Long%20Dark-52x72.jpg",
+                    "template": "https://static-cdn.jtvnw.net/ttv-boxart/The%20Long%20Dark-{width}x{height}.jpg"
+                },
+                "logo": {
+                    "large": "https://static-cdn.jtvnw.net/ttv-logoart/The%20Long%20Dark-240x144.jpg",
+                    "medium": "https://static-cdn.jtvnw.net/ttv-logoart/The%20Long%20Dark-120x72.jpg",
+                    "small": "https://static-cdn.jtvnw.net/ttv-logoart/The%20Long%20Dark-60x36.jpg",
+                    "template": "https://static-cdn.jtvnw.net/ttv-logoart/The%20Long%20Dark-{width}x{height}.jpg"
+                },
+                "_links": {},
+                "localized_name": "The Long Dark",
+                "locale": "pt-br"
+            },
+            "viewers": 2112,
+            "channels": 166
+        },
+        {
+            "game": {
+                "name": "World of Tanks",
+                "popularity": 2111,
+                "_id": 27546,
+                "giantbomb_id": 30567,
+                "box": {
+                    "large": "https://static-cdn.jtvnw.net/ttv-boxart/World%20of%20Tanks-272x380.jpg",
+                    "medium": "https://static-cdn.jtvnw.net/ttv-boxart/World%20of%20Tanks-136x190.jpg",
+                    "small": "https://static-cdn.jtvnw.net/ttv-boxart/World%20of%20Tanks-52x72.jpg",
+                    "template": "https://static-cdn.jtvnw.net/ttv-boxart/World%20of%20Tanks-{width}x{height}.jpg"
+                },
+                "logo": {
+                    "large": "https://static-cdn.jtvnw.net/ttv-logoart/World%20of%20Tanks-240x144.jpg",
+                    "medium": "https://static-cdn.jtvnw.net/ttv-logoart/World%20of%20Tanks-120x72.jpg",
+                    "small": "https://static-cdn.jtvnw.net/ttv-logoart/World%20of%20Tanks-60x36.jpg",
+                    "template": "https://static-cdn.jtvnw.net/ttv-logoart/World%20of%20Tanks-{width}x{height}.jpg"
+                },
+                "_links": {},
+                "localized_name": "World of Tanks",
+                "locale": "pt-br"
+            },
+            "viewers": 2096,
+            "channels": 90
+        },
+        {
+            "game": {
+                "name": "Dead Cells",
+                "popularity": 1958,
+                "_id": 495961,
+                "giantbomb_id": 58490,
+                "box": {
+                    "large": "https://static-cdn.jtvnw.net/ttv-boxart/Dead%20Cells-272x380.jpg",
+                    "medium": "https://static-cdn.jtvnw.net/ttv-boxart/Dead%20Cells-136x190.jpg",
+                    "small": "https://static-cdn.jtvnw.net/ttv-boxart/Dead%20Cells-52x72.jpg",
+                    "template": "https://static-cdn.jtvnw.net/ttv-boxart/Dead%20Cells-{width}x{height}.jpg"
+                },
+                "logo": {
+                    "large": "https://static-cdn.jtvnw.net/ttv-logoart/Dead%20Cells-240x144.jpg",
+                    "medium": "https://static-cdn.jtvnw.net/ttv-logoart/Dead%20Cells-120x72.jpg",
+                    "small": "https://static-cdn.jtvnw.net/ttv-logoart/Dead%20Cells-60x36.jpg",
+                    "template": "https://static-cdn.jtvnw.net/ttv-logoart/Dead%20Cells-{width}x{height}.jpg"
+                },
+                "_links": {},
+                "localized_name": "Dead Cells",
+                "locale": "pt-br"
+            },
+            "viewers": 1980,
+            "channels": 22
+        },
+        {
+            "game": {
+                "name": "Splatoon 2",
+                "popularity": 1948,
+                "_id": 495064,
+                "giantbomb_id": 57687,
+                "box": {
+                    "large": "https://static-cdn.jtvnw.net/ttv-boxart/Splatoon%202-272x380.jpg",
+                    "medium": "https://static-cdn.jtvnw.net/ttv-boxart/Splatoon%202-136x190.jpg",
+                    "small": "https://static-cdn.jtvnw.net/ttv-boxart/Splatoon%202-52x72.jpg",
+                    "template": "https://static-cdn.jtvnw.net/ttv-boxart/Splatoon%202-{width}x{height}.jpg"
+                },
+                "logo": {
+                    "large": "https://static-cdn.jtvnw.net/ttv-logoart/Splatoon%202-240x144.jpg",
+                    "medium": "https://static-cdn.jtvnw.net/ttv-logoart/Splatoon%202-120x72.jpg",
+                    "small": "https://static-cdn.jtvnw.net/ttv-logoart/Splatoon%202-60x36.jpg",
+                    "template": "https://static-cdn.jtvnw.net/ttv-logoart/Splatoon%202-{width}x{height}.jpg"
+                },
+                "_links": {},
+                "localized_name": "Splatoon 2",
+                "locale": "pt-br"
+            },
+            "viewers": 1958,
+            "channels": 135
+        },
+        {
+            "game": {
+                "name": "Super Mario World",
+                "popularity": 2011,
+                "_id": 1229,
+                "giantbomb_id": 1334,
+                "box": {
+                    "large": "https://static-cdn.jtvnw.net/ttv-boxart/Super%20Mario%20World-272x380.jpg",
+                    "medium": "https://static-cdn.jtvnw.net/ttv-boxart/Super%20Mario%20World-136x190.jpg",
+                    "small": "https://static-cdn.jtvnw.net/ttv-boxart/Super%20Mario%20World-52x72.jpg",
+                    "template": "https://static-cdn.jtvnw.net/ttv-boxart/Super%20Mario%20World-{width}x{height}.jpg"
+                },
+                "logo": {
+                    "large": "https://static-cdn.jtvnw.net/ttv-logoart/Super%20Mario%20World-240x144.jpg",
+                    "medium": "https://static-cdn.jtvnw.net/ttv-logoart/Super%20Mario%20World-120x72.jpg",
+                    "small": "https://static-cdn.jtvnw.net/ttv-logoart/Super%20Mario%20World-60x36.jpg",
+                    "template": "https://static-cdn.jtvnw.net/ttv-logoart/Super%20Mario%20World-{width}x{height}.jpg"
+                },
+                "_links": {},
+                "localized_name": "Super Mario World",
+                "locale": "pt-br"
+            },
+            "viewers": 1910,
+            "channels": 9
+        },
+        {
+            "game": {
+                "name": "Pokémon Sun/Moon",
+                "popularity": 1841,
+                "_id": 491599,
+                "giantbomb_id": 52769,
+                "box": {
+                    "large": "https://static-cdn.jtvnw.net/ttv-boxart/Pok%C3%A9mon%20Sun/Moon-272x380.jpg",
+                    "medium": "https://static-cdn.jtvnw.net/ttv-boxart/Pok%C3%A9mon%20Sun/Moon-136x190.jpg",
+                    "small": "https://static-cdn.jtvnw.net/ttv-boxart/Pok%C3%A9mon%20Sun/Moon-52x72.jpg",
+                    "template": "https://static-cdn.jtvnw.net/ttv-boxart/Pok%C3%A9mon%20Sun/Moon-{width}x{height}.jpg"
+                },
+                "logo": {
+                    "large": "https://static-cdn.jtvnw.net/ttv-logoart/Pok%C3%A9mon%20Sun/Moon-240x144.jpg",
+                    "medium": "https://static-cdn.jtvnw.net/ttv-logoart/Pok%C3%A9mon%20Sun/Moon-120x72.jpg",
+                    "small": "https://static-cdn.jtvnw.net/ttv-logoart/Pok%C3%A9mon%20Sun/Moon-60x36.jpg",
+                    "template": "https://static-cdn.jtvnw.net/ttv-logoart/Pok%C3%A9mon%20Sun/Moon-{width}x{height}.jpg"
+                },
+                "_links": {},
+                "localized_name": "Pokémon Sun/Moon",
+                "locale": "pt-br"
+            },
+            "viewers": 1873,
+            "channels": 58
+        },
+        {
+            "game": {
+                "name": "Casino",
+                "popularity": 1729,
+                "_id": 9234,
+                "giantbomb_id": 29666,
+                "box": {
+                    "large": "https://static-cdn.jtvnw.net/ttv-boxart/Casino-272x380.jpg",
+                    "medium": "https://static-cdn.jtvnw.net/ttv-boxart/Casino-136x190.jpg",
+                    "small": "https://static-cdn.jtvnw.net/ttv-boxart/Casino-52x72.jpg",
+                    "template": "https://static-cdn.jtvnw.net/ttv-boxart/Casino-{width}x{height}.jpg"
+                },
+                "logo": {
+                    "large": "https://static-cdn.jtvnw.net/ttv-logoart/Casino-240x144.jpg",
+                    "medium": "https://static-cdn.jtvnw.net/ttv-logoart/Casino-120x72.jpg",
+                    "small": "https://static-cdn.jtvnw.net/ttv-logoart/Casino-60x36.jpg",
+                    "template": "https://static-cdn.jtvnw.net/ttv-logoart/Casino-{width}x{height}.jpg"
+                },
+                "_links": {},
+                "localized_name": "Casino",
+                "locale": "pt-br"
+            },
+            "viewers": 1785,
+            "channels": 20
+        },
+        {
+            "game": {
+                "name": "FIFA 17",
+                "popularity": 1758,
+                "_id": 493091,
+                "giantbomb_id": 54134,
+                "box": {
+                    "large": "https://static-cdn.jtvnw.net/ttv-boxart/FIFA%2017-272x380.jpg",
+                    "medium": "https://static-cdn.jtvnw.net/ttv-boxart/FIFA%2017-136x190.jpg",
+                    "small": "https://static-cdn.jtvnw.net/ttv-boxart/FIFA%2017-52x72.jpg",
+                    "template": "https://static-cdn.jtvnw.net/ttv-boxart/FIFA%2017-{width}x{height}.jpg"
+                },
+                "logo": {
+                    "large": "https://static-cdn.jtvnw.net/ttv-logoart/FIFA%2017-240x144.jpg",
+                    "medium": "https://static-cdn.jtvnw.net/ttv-logoart/FIFA%2017-120x72.jpg",
+                    "small": "https://static-cdn.jtvnw.net/ttv-logoart/FIFA%2017-60x36.jpg",
+                    "template": "https://static-cdn.jtvnw.net/ttv-logoart/FIFA%2017-{width}x{height}.jpg"
+                },
+                "_links": {},
+                "localized_name": "FIFA 17",
+                "locale": "pt-br"
+            },
+            "viewers": 1757,
+            "channels": 109
+        },
+        {
+            "game": {
+                "name": "Call of Duty: Black Ops III",
+                "popularity": 1687,
+                "_id": 489401,
+                "giantbomb_id": 48754,
+                "box": {
+                    "large": "https://static-cdn.jtvnw.net/ttv-boxart/Call%20of%20Duty:%20Black%20Ops%20III-272x380.jpg",
+                    "medium": "https://static-cdn.jtvnw.net/ttv-boxart/Call%20of%20Duty:%20Black%20Ops%20III-136x190.jpg",
+                    "small": "https://static-cdn.jtvnw.net/ttv-boxart/Call%20of%20Duty:%20Black%20Ops%20III-52x72.jpg",
+                    "template": "https://static-cdn.jtvnw.net/ttv-boxart/Call%20of%20Duty:%20Black%20Ops%20III-{width}x{height}.jpg"
+                },
+                "logo": {
+                    "large": "https://static-cdn.jtvnw.net/ttv-logoart/Call%20of%20Duty:%20Black%20Ops%20III-240x144.jpg",
+                    "medium": "https://static-cdn.jtvnw.net/ttv-logoart/Call%20of%20Duty:%20Black%20Ops%20III-120x72.jpg",
+                    "small": "https://static-cdn.jtvnw.net/ttv-logoart/Call%20of%20Duty:%20Black%20Ops%20III-60x36.jpg",
+                    "template": "https://static-cdn.jtvnw.net/ttv-logoart/Call%20of%20Duty:%20Black%20Ops%20III-{width}x{height}.jpg"
+                },
+                "_links": {},
+                "localized_name": "Call of Duty: Black Ops III",
+                "locale": "pt-br"
+            },
+            "viewers": 1737,
+            "channels": 469
+        },
+        {
+            "game": {
+                "name": "Call of Duty: Modern Warfare Remastered",
+                "popularity": 1642,
+                "_id": 494155,
+                "giantbomb_id": 0,
+                "box": {
+                    "large": "https://static-cdn.jtvnw.net/ttv-boxart/Call%20of%20Duty:%20Modern%20Warfare%20Remastered-272x380.jpg",
+                    "medium": "https://static-cdn.jtvnw.net/ttv-boxart/Call%20of%20Duty:%20Modern%20Warfare%20Remastered-136x190.jpg",
+                    "small": "https://static-cdn.jtvnw.net/ttv-boxart/Call%20of%20Duty:%20Modern%20Warfare%20Remastered-52x72.jpg",
+                    "template": "https://static-cdn.jtvnw.net/ttv-boxart/Call%20of%20Duty:%20Modern%20Warfare%20Remastered-{width}x{height}.jpg"
+                },
+                "logo": {
+                    "large": "https://static-cdn.jtvnw.net/ttv-logoart/Call%20of%20Duty:%20Modern%20Warfare%20Remastered-240x144.jpg",
+                    "medium": "https://static-cdn.jtvnw.net/ttv-logoart/Call%20of%20Duty:%20Modern%20Warfare%20Remastered-120x72.jpg",
+                    "small": "https://static-cdn.jtvnw.net/ttv-logoart/Call%20of%20Duty:%20Modern%20Warfare%20Remastered-60x36.jpg",
+                    "template": "https://static-cdn.jtvnw.net/ttv-logoart/Call%20of%20Duty:%20Modern%20Warfare%20Remastered-{width}x{height}.jpg"
+                },
+                "_links": {},
+                "localized_name": "Call of Duty: Modern Warfare Remastered",
+                "locale": "pt-br"
+            },
+            "viewers": 1702,
+            "channels": 170
+        },
+        {
+            "game": {
+                "name": "Friday the 13th: The Game",
+                "popularity": 1668,
+                "_id": 488518,
+                "giantbomb_id": 48132,
+                "box": {
+                    "large": "https://static-cdn.jtvnw.net/ttv-boxart/Friday%20the%2013th:%20The%20Game-272x380.jpg",
+                    "medium": "https://static-cdn.jtvnw.net/ttv-boxart/Friday%20the%2013th:%20The%20Game-136x190.jpg",
+                    "small": "https://static-cdn.jtvnw.net/ttv-boxart/Friday%20the%2013th:%20The%20Game-52x72.jpg",
+                    "template": "https://static-cdn.jtvnw.net/ttv-boxart/Friday%20the%2013th:%20The%20Game-{width}x{height}.jpg"
+                },
+                "logo": {
+                    "large": "https://static-cdn.jtvnw.net/ttv-logoart/Friday%20the%2013th:%20The%20Game-240x144.jpg",
+                    "medium": "https://static-cdn.jtvnw.net/ttv-logoart/Friday%20the%2013th:%20The%20Game-120x72.jpg",
+                    "small": "https://static-cdn.jtvnw.net/ttv-logoart/Friday%20the%2013th:%20The%20Game-60x36.jpg",
+                    "template": "https://static-cdn.jtvnw.net/ttv-logoart/Friday%20the%2013th:%20The%20Game-{width}x{height}.jpg"
+                },
+                "_links": {},
+                "localized_name": "Friday the 13th: The Game",
+                "locale": "pt-br"
+            },
+            "viewers": 1687,
+            "channels": 193
+        },
+        {
+            "game": {
+                "name": "Half-Life",
+                "popularity": 1570,
+                "_id": 2755,
+                "giantbomb_id": 2980,
+                "box": {
+                    "large": "https://static-cdn.jtvnw.net/ttv-boxart/Half-Life-272x380.jpg",
+                    "medium": "https://static-cdn.jtvnw.net/ttv-boxart/Half-Life-136x190.jpg",
+                    "small": "https://static-cdn.jtvnw.net/ttv-boxart/Half-Life-52x72.jpg",
+                    "template": "https://static-cdn.jtvnw.net/ttv-boxart/Half-Life-{width}x{height}.jpg"
+                },
+                "logo": {
+                    "large": "https://static-cdn.jtvnw.net/ttv-logoart/Half-Life-240x144.jpg",
+                    "medium": "https://static-cdn.jtvnw.net/ttv-logoart/Half-Life-120x72.jpg",
+                    "small": "https://static-cdn.jtvnw.net/ttv-logoart/Half-Life-60x36.jpg",
+                    "template": "https://static-cdn.jtvnw.net/ttv-logoart/Half-Life-{width}x{height}.jpg"
+                },
+                "_links": {},
+                "localized_name": "Half-Life",
+                "locale": "pt-br"
+            },
+            "viewers": 1591,
+            "channels": 5
+        },
+        {
+            "game": {
+                "name": "Kingsway",
+                "popularity": 1567,
+                "_id": 497865,
+                "giantbomb_id": 60338,
+                "box": {
+                    "large": "https://static-cdn.jtvnw.net/ttv-boxart/Kingsway-272x380.jpg",
+                    "medium": "https://static-cdn.jtvnw.net/ttv-boxart/Kingsway-136x190.jpg",
+                    "small": "https://static-cdn.jtvnw.net/ttv-boxart/Kingsway-52x72.jpg",
+                    "template": "https://static-cdn.jtvnw.net/ttv-boxart/Kingsway-{width}x{height}.jpg"
+                },
+                "logo": {
+                    "large": "https://static-cdn.jtvnw.net/ttv-logoart/Kingsway-240x144.jpg",
+                    "medium": "https://static-cdn.jtvnw.net/ttv-logoart/Kingsway-120x72.jpg",
+                    "small": "https://static-cdn.jtvnw.net/ttv-logoart/Kingsway-60x36.jpg",
+                    "template": "https://static-cdn.jtvnw.net/ttv-logoart/Kingsway-{width}x{height}.jpg"
+                },
+                "_links": {},
+                "localized_name": "Kingsway",
+                "locale": "pt-br"
+            },
+            "viewers": 1588,
+            "channels": 6
+        },
+        {
+            "game": {
+                "name": "Albion Online",
+                "popularity": 1589,
+                "_id": 417528,
+                "giantbomb_id": 47843,
+                "box": {
+                    "large": "https://static-cdn.jtvnw.net/ttv-boxart/Albion%20Online-272x380.jpg",
+                    "medium": "https://static-cdn.jtvnw.net/ttv-boxart/Albion%20Online-136x190.jpg",
+                    "small": "https://static-cdn.jtvnw.net/ttv-boxart/Albion%20Online-52x72.jpg",
+                    "template": "https://static-cdn.jtvnw.net/ttv-boxart/Albion%20Online-{width}x{height}.jpg"
+                },
+                "logo": {
+                    "large": "https://static-cdn.jtvnw.net/ttv-logoart/Albion%20Online-240x144.jpg",
+                    "medium": "https://static-cdn.jtvnw.net/ttv-logoart/Albion%20Online-120x72.jpg",
+                    "small": "https://static-cdn.jtvnw.net/ttv-logoart/Albion%20Online-60x36.jpg",
+                    "template": "https://static-cdn.jtvnw.net/ttv-logoart/Albion%20Online-{width}x{height}.jpg"
+                },
+                "_links": {},
+                "localized_name": "Albion Online",
+                "locale": "pt-br"
+            },
+            "viewers": 1548,
+            "channels": 86
+        }
+    ]
+}

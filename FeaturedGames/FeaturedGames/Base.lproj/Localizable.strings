@@ -1,0 +1,23 @@
+/*
+ Localizable.strings
+ FeaturedGames
+
+ Created by Cauê Silva on 05/08/17.
+ Copyright © 2017 Caue Alves. All rights reserved.
+ */
+
+"#50 Games" = "#50 Games";
+"Aviso" = "Aviso";
+"Ocorreu uma falha na conexão ao carregar os jogos." = "Ocorreu uma falha na conexão ao carregar os jogos.";
+"Os dados exibidos podem estar desatualizados." = "Os dados exibidos podem estar desatualizados.";
+"Deseja tentar novamente?" = "Deseja tentar novamente?";
+"Cancelar" = "Cancelar";
+"carregando jogos..." = "carregando jogos...";
+"posição" = "posição";
+"canais" = "canais";
+"visualizações" = "visualizações";
+"compartilhando..." = "compartilhando...";
+"Você sabia que o jogo" = "Você sabia que o jogo";
+"está em" = "está em";
+"entre os destaques do Twitch?" = "entre os destaques do Twitch?";
+"Veja a lista completa no app" = "Veja a lista completa no app";

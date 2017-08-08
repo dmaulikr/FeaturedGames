@@ -1,15 +1,25 @@
 PODS:
-  - Kingfisher (3.10.1)
+  - FLAnimatedImage (1.0.12)
   - ObjectMapper (2.2.7)
+  - PINCache (2.3)
+  - PINRemoteImage (2.1.4):
+    - PINRemoteImage/FLAnimatedImage (= 2.1.4)
+  - PINRemoteImage/Core (2.1.4):
+    - PINCache (>= 2.1)
+  - PINRemoteImage/FLAnimatedImage (2.1.4):
+    - FLAnimatedImage (>= 1.0)
+    - PINRemoteImage/Core
 
 DEPENDENCIES:
-  - Kingfisher
   - ObjectMapper
+  - PINRemoteImage
 
 SPEC CHECKSUMS:
-  Kingfisher: 33a1b82140fcb14a9fc13f78dfde2a03ff8de8cb
+  FLAnimatedImage: 4a0b56255d9b05f18b6dd7ee06871be5d3b89e31
   ObjectMapper: 65abcfd9a61cf7396cbd14a4fb22fddfcc46577e
+  PINCache: ce36ed282031b92fc7733ffe831f474ff80fddc2
+  PINRemoteImage: 4ac4011c5caefd6befd99758e09becede05d3226
 
-PODFILE CHECKSUM: 5c09cf7c12872ce2093592d5fa9648b835deca01
+PODFILE CHECKSUM: 85edd746deafc0e190511ed8de6b043252c3bd57
 
 COCOAPODS: 1.2.1

@@ -1,7 +1,16 @@
 platform :ios, '9.0'
-use_frameworks!
+inhibit_all_warnings!
+
+def common_pods_for_target
+    use_frameworks!
+    pod 'ObjectMapper'
+    pod 'PINRemoteImage'
+end
 
 target 'FeaturedGames' do
-  pod 'ObjectMapper'
-  pod 'Kingfisher'
+  common_pods_for_target
+end
+
+target 'FeaturedGamesTests' do
+    common_pods_for_target
 end
